@@ -225,9 +225,19 @@ Direct comparison:
   \label{fig:keller} 
 \end{figure}
 
-We first re-capitulated Keller's band counting method \cite{Keller1975} but using
-chloroquine instead of ethidium-bromide as intercalating agent (Fig. \ref{fig:keller}).
-\salima{dein text}
+To establish the effect of chloroquine on plasmids, we established
+Keller's band counting method \cite{Keller1975} but using chloroquine
+instead of ethidium-bromide as the intercalating agent
+(Fig. \ref{fig:keller}).
+
+* different concentrations in 0.5x TBE vs. Cut Smart topoI reaction
+buffer; Keller used similarly different concentration of EtBr for
+reaction vs. gel
+
+* quick reversal of migration distance already at low CQ
+concentration. in vivo control C  relaxed state at \SI{2}{\ugml}
+
+
 
 
 \begin{figure}[ht!]
@@ -378,16 +388,6 @@ The maximal linking number differences between light and dark phase
 were only $\Delta \Delta \overline{Lk} \approx 1$, and $\Delta \Delta
 \overline{Lk} \approx 2$ after the prolonged dark phase.
 
-\begin{table}[ht!]
-  \begin{tabular}{c|c|l}
-    Plasmid & Direction & Sequence \\
-    \hline
-    pCA2.4\_M &forward & ACAGGGGTAAATGAGTGCCG\\ % grep-confirmed
-    &reverse & GCAAGCAGTCCTCCACAAGA  % grep-confirmed, revcomp
-  \end{tabular}
-  \caption{\textbf{Southern Blot Probes: Primer Sequences.}}
-  \label{tab:blot}
-\end{table}
 
 \section{Discussion}
 
@@ -420,11 +420,11 @@ via T5 exonuclease (NEB: M0363) reaction and the NucleoSpin Gel and
 PCR Clean-up kit (Machery-Nagel). The final plasmid DNA
 concentration was determined with the Nanodrop.
 %
-\paragraph{pUC19 Relaxation Reactions.}
+\paragraph{pUC19 Relaxation Series.}
 The pUC19 plasmid extract was split and \SI{1}{\ug} samples were
 incubated with 0--3000 \si{\ugml} chloroquine in \SI{24}{\uL} of the
 Cut Smart reaction buffer for \SI{15}{\min} at \SI{37}{\celsius}. Then
-\SI{1}{\uL} (\SI{5}{U}) topoisomerase I (NEB: M0301) was added and the
+\SI{1}{\uL} (\SI{5}{U}) topoI (NEB: M0301) was added and the
 samples incubated for another \SI{15}{\min} at the same
 temperature. The reaction was stopped by incubation at
 \SI{65}{\celsius} for \SI{20}{\min} and samples were purified with the
@@ -500,6 +500,33 @@ and stained with \SI{25}{\uL} Sybr Gold in \SI{225}{\mL} 0.5x TBE
 buffer for \SIrange{3}{24}{\hour} and imaged on a BioRad Imaging
 System (ChemiDoc MP). Washing and staining were also performed
 light-protected.
+
+\paragraph{Soutern Blots of Agarose Gels.}
+
+\raim{PCR-Programm: 3 min, 95 \dgrc{}; 35x(95\dgrc{} 30s, 50\dgrc{} 30s,
+72\dgrc{} 1min); 72\dgrc{} 5min.  PCR-Produkte auf ein Agarosegel
+aufgetrennt, die Bande ausgeschnitten und mit Nucleo Spin Extract II
+von Macherey-Nagel aufgereinigt. Diese DNA habe wurde dann genutzt um
+mit dem gleichen PCR-Programm DIG gelabelte Sonden herzustellen (DIG
+labeling Mix von Roche).  Dig easy Hyb Protokoll, leicht ver\"andert:
+Der Blot wurde f\"ur 1 h, 50 \dgrc{} mit DIG easy Hyb (Roche, 1603558)
+pre-hybridisiert. Die Sonde auf 95 \dgrc{} 15 min denaturiert und auf
+Eis abgek\"uhlt. Der Blot wurde \"uber Nacht bei 50 \dgrc{} hybridisiert
+und anschlie\ss{}end 2x 5min mit 2x SSC, 0.1 \% SDS 50 \dgrc{} gewaschen,
+dann 2x 15 min mit 0.1x SSC und 0.1 \% SDS 65 \dgrc{} gewaschen.
+Weitere Schritte wie im CDP-Star Manual.}
+
+\begin{table}[ht!]
+  \begin{tabular}{c|c|l}
+    Plasmid & Direction & Sequence \\
+    \hline
+    pCA2.4\_M &forward & ACAGGGGTAAATGAGTGCCG\\ % grep-confirmed
+    &reverse & GCAAGCAGTCCTCCACAAGA  % grep-confirmed, revcomp
+  \end{tabular}
+  \caption{\textbf{Southern Blot Probes: Primer Sequences.}}
+  \label{tab:blot}
+\end{table}
+
 
 \paragraph{Analysis of Gel Electropherograms.}
 Electropherograms were extracted in ImageJ for each lane and analyzed
