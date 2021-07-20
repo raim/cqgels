@@ -40,6 +40,10 @@
 \newcommand{\cuparrow}{\textcolor{blue}{$\pmb\uparrow$}}
 \newcommand{\cdoarrow}{\textcolor{red}{$\pmb\downarrow$}}
 
+\newcommand{\cqgel}{\ensuremath{\text{CQ}_{\text{gel}}}}
+\newcommand{\cqtop}{\ensuremath{\text{CQ}_{\text{topoI}}}}
+
+
 
 % nice:
 %\usepackage{markdown}
@@ -185,17 +189,18 @@ chloroquine (CQ), but not further discussed the differences.
 Here, we set out to clarify this open issue in cyanbacterial DNA
 supercoiling dynamics. We first re-capitulate Keller's band counting
 method (1975, PNAS) using CQ instead of ethidium bromide as the
-intercalating agent.  A 500x--1000x higher concentration of CQ is
-required in the topoisomerase I reaction than on the agarose gel to
-achieve plasmid relaxation. This is likely due to the dependence of
-the DNA binding affinity on the ionic strength of the buffer. We
-observe that lower levels of CQ are required to fully relax pUC19 than
-was used by Woelfle \textit{et al.}. Next we analyzed the \textit{in
-  vivo} supercoiling of endogenous plasmids of \textit{Synechococcus
-  elongatus} and \textit{Synechocystis sp.} PCC 6803, at two different
-CQ concentrations.  This clearly indicates that negative supercoiling
-of plasmids does not increase but decreases in the dark phase, and
-proressively decreases in prolonged dark.
+intercalating agent.  A 500x--1000x higher CQ concentration is
+required in the topoisomerase I reaction than in the agarose gel
+buffer to achieve full plasmid relaxation. This is likely due to the
+dependence of both, the DNA binding affinity and the DNA unwinding
+angle, on the ionic strength of the buffer. We observe that lower
+levels of CQ are required to fully relax \textit{in vivo} pUC19
+supercoiling than was used by Woelfle \textit{et al.}. Next we
+analyzed the \textit{in vivo} supercoiling of endogenous plasmids of
+\textit{Synechococcus elongatus} and \textit{Synechocystis sp.} PCC
+6803, at two different CQ concentrations.  This clearly indicates that
+negative supercoiling of plasmids does not increase but decreases in
+the dark phase, and proressively decreases in prolonged dark.
 
 
 
@@ -280,49 +285,49 @@ Direct comparison:
 
 \section{Results}
 
-\paragraph{Keller's Band Counting Method with the pUC19 Plasmid and Chloroquine.}
+\paragraph{Keller's Band Counting Method with Chloroquine.}
+To establish the effect of chloroquine (CQ) on plasmids, we
+recapitulated Keller's band counting method but using chloroquine
+instead of ethidium bromide (EtBr) as the intercalating agent
+(Fig. \ref{fig:keller}).
+%
+In Keller's protocol \cite{Keller1975b} the indicated EtBr
+concentrations in the topoI reaction ranged from
+\SIrange{0}{6.9}{\uM}. With a molecular mass of
+\SI{394.294}{\gram\per\mol}, the highest concentration is
+\SI{2.7}{\ugml}. In the gels, only \num{0.012}, \num{0.016},
+\num{0.024}, and \SI{0.06}{\ugml} were used. That is, in the topoI
+reaction, 45-225x more EtBr was used to achieve the same effect.
 
-In Keller's original protocol \cite{Keller1975b} the ethidium bromide
-ranges from 0 to 6.9 μM for the topoI reaction, with assumption of
-molecular mass \SI{394.294}{\gram\per\mol}, we obtain 2.7
-\SI{2.7}{\ugml} as the highest concentration in the topoI reaction. In
-the gels, only 0.012, 0.016, 0.024, and 0.06 ug/mL were used.In the
-topoI reaction, about 45-225x more ethidium bromide was needed to
-completely relax the same plasmid. To establish the effect of
-chloroquine on plasmids, we recapitulated Keller's band counting method
-but using chloroquine instead of ethidium bromide as the
-intercalating agent (Fig. \ref{fig:keller}).
+\TODO{gel buffers have high ionic strength, required for gel electrophoresis,}
+
+\TODO{EtBr:DNA dissociation constant, dependence on ionic strength}
+
+\TODO{more or less undwinding angle and lower or higher dissociation
+  constant with ionic strength?}
+
 
 The unwinding angle for chloroquine increases with ionic strength
-\cite{Jones1980}, while it is independent for ethidium bromide
+\cite{Jones1980}, while it is independent for EtBr
 \todo{confirm}. This results in different unwinding angles between CQ
-in the topoI reaction vs. the gels. The CQ:DNA
-dissociation constant, varied from 27 μM to 2.6 mM, depending on the
-ionic strength of the buffer \cite{KwakyeBerko1989}.
+in the topoI reaction vs. the gels. The CQ:DNA dissociation constant,
+varied from \SIrange{27}{2600}{\uM}, depending on the ionic strength
+of the buffer \cite{KwakyeBerko1989}.
+
+\TODO{here 0.5xTBE for gel and, the CutSmart buffer for the topoI
+  reactions}
+
+Figure \ref{fig:keller} shows that the lowest CQ concentrations in the
+gel ($\cqgel=\SI{1}{\ugml}$) was sufficient to detect a clear change
+in the migration of the pUC19 topoisomers. The relaxed plasmids
+($\cqtop=\SIrange{0}{200}{\ugml}$) had already shifted to positive
+supercoiling and migrated faster than without CQ.  Topoisomers treated
+with $\cqtop=\SIrange{800}{1000}{\ugml}$ were all close to full
+relaxation. The untreated \textit{in vivo} sample (``C'') appeared
+fully relaxed at $\cqgel=\SI{2}{\ugml}$, and shifted to positive
+supercoiling at $\cqgel>\SI{4}{\ugml}$.
 
 
-Buffers for electrophoresis normally
-have a high ionic strength\TODO{, here 0.5xTBE}. For the topoI reactions we used
-the standard CutSmart buffer which is optimized for emzyme reactions
-and was provided with topoI. \TODO{we expect} 
-
-Figure \ref{fig:keller} shows that low CQ concentrations in the gel
-are sufficient (1 μg/ml, 2 μg/ml) to detect a clear change in the
-migration rates of the pUC19 topoisomers. Already 2 μg/ml is the in
-vivo control "C" in the relaxed state.  Little happens in the
-concentrations between 4 and 8 μg/ml compared to the low
-concentrations.  The largest shift is between 0 μg/ml and 1 μg/ml,
-where an instant reversal of migration distance and direction can be
-seen.While at 0 the topoisomers of the low CQ-reaction concentrations
-have widely separated (0 -300 μg/ml CQ in topoI reaction), this is
-already changed from 1 μg/ml.  There, separation can be seen in each
-reaction, although it is more difficult to detect visually at 0 and
-100 μg/ml CQ in topoI reaction
-
-\TODO{
-TBE has high ionic strength, required for gel electrophoresis,
-
-}
 
 \begin{figure}[ht!]
     \includegraphics[width=\textwidth]{figures/keller_puc19.jpg}
