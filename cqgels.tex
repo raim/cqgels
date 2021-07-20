@@ -19,7 +19,7 @@
 % \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{mathtools}
 
-\usepackage[separate-uncertainty=true, multi-part-units=single]{siunitx}
+\usepackage[repeatunits=false,range-units=single]{siunitx}
 \newcommand{\micron}{\micro\meter}
 \newcommand{\fL}{\femto\liter}
 \newcommand{\mmol}{\milli\mol}
@@ -30,7 +30,6 @@
 \newcommand{\gcdw}{\gram_\text{\tiny DCW}}
 \newcommand{\cmol}{\textsc{C$\cdot$}\mol}
 \newcommand{\cellvolume}{\milli\liter_\text{\tiny cell}}
-\sisetup{range-phrase = \text{--}}
 
 \newcommand{\mL}{\milli\liter}
 \newcommand{\gpl}{\gram\per\liter}
@@ -148,7 +147,8 @@
 
 % document begins here
 \begin{document}
-\vspace*{0.35in}
+\sisetup{range-phrase = \text{ - }}
+
 
 % title goes here:
 \begin{flushleft}
@@ -293,7 +293,7 @@ instead of ethidium bromide (EtBr) as the intercalating agent
 %
 In Keller's protocol \cite{Keller1975b} the indicated EtBr
 concentrations in the topoI reaction ranged from
-\SIrange{0}{6.9}{\uM}. With a molecular mass of
+\SIrange[range-phrase=-]{0}{6.9}{\uM}. With a molecular mass of
 \SI{394.3}{\gram\per\mol}, the highest concentration is
 \SI{2.7}{\ugml}. In the gels the maximal concentration was
 \SI{0.06}{\ugml}. That is, in the topoI reaction, up to 45x more EtBr
