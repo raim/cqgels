@@ -299,38 +299,77 @@ recapitulated Keller's band counting method but using chloroquine
 instead of ethidium bromide (EtBr) as the intercalating agent
 (Fig. \ref{fig:keller}).
 %
+
+\TODO{SV40 viral propagated in and isolated from African green monkey
+  cells (CV-1), where negative supercoiling is presumably induced by
+  nucleosomes ... in vitro relaxation with topoI ()}
+
 In Keller's protocol \cite{Keller1975b} the indicated EtBr
 concentrations in the topoI reaction ranged from
 \SIrange[range-phrase=-]{0}{6.9}{\uM}. With a molecular mass of
 \SI{394.3}{\gram\per\mol}, the highest concentration is
 \SI{2.7}{\ugml}. In the gels the maximal concentration was
-\SI{0.06}{\ugml}. That is, in the topoI reaction, up to 45x more EtBr
-was used in the topoisomerase I relaxtion reactions than in the gels
-to achieve the similar plasmid relaxation effects.
+\SI{0.06}{\ugml}. 
+%That is, in the topoI reaction, up to 45x more EtBr
+%was used in the topoisomerase I relaxtion reactions than in the gels
+%to achieve the similar plasmid relaxation effects.
+%
+%lanes 11 and 9 have in vivo supercoiling
+%
+Full relaxation of the SV40 DNA was achieved at
+$\cqgel=\SI{0.06}{\ugml}$ in the gel buffer () and at
+$\cqtop\approx\SI{1.7}{\ugml}$ (lane 11 Figures 1 and 3 of
+\cite{Keller1975b}: ca. $\SI{4.5}{\uM}$) in the topoI reaction buffer
+().
+%
+%That is, the CQ concentration required to fully quench all
+%supercoiling was $\approx$30 lower in the
+%gel buffer than in the topoI reaction buffer.
+
+\TODO{We ...pUC19 in E.coli}
+
+Figure \ref{fig:keller} shows that the lowest CQ concentrations in the
+gel ($\cqgel=\SI{1}{\ugml}$) was sufficient to detect a clear change
+in the migration of the pUC19 topoisomers. Fully relaxed plasmids
+($\cqtop=\SIrange{0}{200}{\ugml}$) had already shifted to positive
+supercoiling and migrated faster than without CQ.  Topoisomers treated
+with $\cqtop=\SIrange{800}{1000}{\ugml}$ were all close to full
+relaxation at $\cqgel=\SI{1}{\ugml}$. The untreated \textit{in vivo}
+sample (``C'') appeared fully relaxed at $\cqgel=\SI{2}{\ugml}$, and
+shifted to positive supercoiling at $\cqgel>\SI{4}{\ugml}$.  The
+topoisomers relaxed at the highest concentration
+($\cqtop=\SI{3000}{\ugml}$) appeared with band patterns almost
+identical to the untreated control in all gels.
+%
+Thus, the concentration to fully relax the
+original level of DNA supercoiling was \SIrange{1}{4}{\ugml} in the
+agarose gel buffer (0.5x TBE), and \SIrange{1000}{3000}{\ugml} in the CutSmart
+reaction buffer.
+%
+%That is, the CQ concentration required to fully quench all
+%supercoiling of pUC19 in \textit{E. coli} was $\approx$1000x lower in
+%the gel buffer than in the reaction buffer.
+
+\paragraph{Discussion: CQ vs EtBr.}
+In summary, the intercalator concentration required to fully quench
+the original level supercoiling of SV40 and pUC19 was $\approx$30x and
+$\approx$1000x higher in the reaction buffers than in the gels,
+respectively.
+
+
 
 \TODO{gel buffers have high ionic strength, required for gel electrophoresis,}
-
 \TODO{EtBr:DNA dissociation constant, dependence on ionic strength}
-
 \TODO{more or less undwinding angle and lower or higher dissociation
   constant with ionic strength?\\ The unwinding angle for chloroquine
   increases with ionic strength \cite{Jones1980}, while it is
   independent for EtBr. The CQ:DNA dissociation constant, varied from
   \SIrange{27}{2600}{\uM}, depending on the ionic strength of the
   buffer \cite{KwakyeBerko1989}.}
-
 \TODO{here 0.5xTBE for gel and, the CutSmart buffer for the topoI
   reactions}
 
-Figure \ref{fig:keller} shows that the lowest CQ concentrations in the
-gel ($\cqgel=\SI{1}{\ugml}$) was sufficient to detect a clear change
-in the migration of the pUC19 topoisomers. The relaxed plasmids
-($\cqtop=\SIrange{0}{200}{\ugml}$) had already shifted to positive
-supercoiling and migrated faster than without CQ.  Topoisomers treated
-with $\cqtop=\SIrange{800}{1000}{\ugml}$ were all close to full
-relaxation. The untreated \textit{in vivo} sample (``C'') appeared
-fully relaxed at $\cqgel=\SI{2}{\ugml}$, and shifted to positive
-supercoiling at $\cqgel>\SI{4}{\ugml}$.
+
 
 
 
@@ -410,7 +449,7 @@ supercoiling at $\cqgel>\SI{4}{\ugml}$.
   
   \caption{\textbf{Chloroquine Gel Analysis: Calibration \& Diurnal
       Supercoiling}. \small{\textbf{A:} Mobility after relaxtion with
-      topoisomerase I on an agaorse gel with \SI{20}{\ugml} CQ
+      topoisomerase I on an agarose gel with \SI{20}{\ugml} CQ
       confirms the faster migration of fully relaxed plasmids at these
       conditions. Lanes 1-5: plasmids from pooled light phase samples
       (YL). Lanes 6-10: plasmids from pooled dark phase samples
@@ -534,10 +573,11 @@ concentration was determined with the Nanodrop.
 \paragraph{pUC19 Relaxation Series.}
 The pUC19 plasmid extract was split and \SI{1}{\ug} samples were
 incubated with 0--3000 \si{\ugml} chloroquine in \SI{24}{\uL} of the
-Cut Smart reaction buffer for \SI{15}{\min} at \SI{37}{\celsius}. Then
-\SI{1}{\uL} (\SI{5}{U}) topoI (NEB: M0301) was added and the
-samples incubated for another \SI{15}{\min} at the same
-temperature. The reaction was stopped by incubation at
+CutSmart reaction buffer (50 mM Potassium acetate, 20 mM Tris-acetate,
+10 mM Magnesium acetate, 100 \si{\ugml} BSA, pH 7.9) for \SI{15}{\min}
+at \SI{37}{\celsius}. Then \SI{1}{\uL} (\SI{5}{U}) topoI (NEB: M0301)
+was added and the samples incubated for another \SI{15}{\min} at the
+same temperature. The reaction was stopped by incubation at
 \SI{65}{\celsius} for \SI{20}{\min} and samples were purified with the
 NucleoSpin Gel and PCR Clean-up kit (Machery-Nagel) to remove the
 enzyme and the intercalator.
