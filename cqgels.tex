@@ -1,4 +1,4 @@
-\documentclass[10pt,letterpaper]{article}
+\documentclass[10pt,a4]{article}
 \usepackage[top=0.85in,left=1.75in,footskip=0.75in,marginparwidth=1in]{geometry}
 
 % use Unicode characters - try changing the option if you run into troubles with special characters (e.g. umlauts)
@@ -12,7 +12,9 @@
 \usepackage{grffile}
 
 % clean citationshttps://www.overleaf.com/project/60d45824b01a0838903d992f
-\usepackage{cite}
+%\usepackage{cite}
+\usepackage{natbib}
+
 
 % clean math
 \usepackage{amsfonts}
@@ -58,7 +60,7 @@
 \DisableLigatures[f]{encoding = *, family = * }
 
 % text layout - change as needed
-\raggedright
+%\raggedright
 \setlength{\parindent}{0.5cm}
 \textwidth 6.25in 
 \textheight 8.75in
@@ -226,40 +228,41 @@ In Bacteria, the level of DNA supercoiling is homeostatically controlled by
 enzymes but also depends on the transcription and replication, and
 in turn influences transcription rate of many genes \cite{Dorman2019}. 
 %
-The genome-wide levels of DNA supercoiling are difficult to measure,
-and often endogenous or transfected plasmids are used as a proxy
-measurement for \textit{in vivo} supercoiling levels. Plasmids that
-differ topologically (topoisomers) can be separated on agarose gels,
-where each topoisomer forms a distinct band. Plasmids with a higher
-level of negative or positive supercoiling are more compact and
-migrate faster (further) on agarose gels. However, the dynamic range
-of separable topoisomers is small, and the \textit{in vivo} level of
-plasmid supercoiling leads just to broad (smeared) band that consist
-of several topoisomers. Intercalating substances locally unwind DNA
-and thereby can be used to quench supercoiling.  When adding the right
-amount of such an intercalator, e.g. ethidium bromide or chloroquine,
-plasmid supercoiling can be reduced to a level where topoisomers are
-again separable in agarose gels. Increasing the amount of the intercalator
-can further convert originally negatively supercoiled plasmids to
-positively supercoiled plasmids.
-
-Similarly, intercalators can be used together with a supercoil
-relaxing enzyme such as bacterial topoisomerase I to generate a series
-of plasmid samples with continuously less supercoiling. Keller
-combined the use of an intercalator (ethidium bromide) at different
-concentrations in such a relaxation series and on agarose gels. All
-bands from the original state of the plasmid to the fully relaxed form
-can then be counted to determine the so-called linking number deficit
-($\Delta Lk$) of a plasmid sample. $\Delta Lk$ is the difference of the
-number of crossing of the two helix strands aroud each other (the
-linking number) in the supercoiled plasmid and the relaxed form, where
-the helix has about \SIrange{10.4}{10.5}{bp} per helix turn.
-
-
+%The genome-wide levels of DNA supercoiling are difficult to measure,
+%and often endogenous or transfected plasmids are used as a proxy
+%measurement for \textit{in vivo} supercoiling levels. Plasmids that
+%differ topologically (topoisomers) can be separated on agarose gels,
+%where each topoisomer forms a distinct band. Plasmids with a higher
+%level of negative or positive supercoiling are more compact and
+%migrate faster (further) on agarose gels. However, the dynamic range
+%of separable topoisomers is small, and the \textit{in vivo} level of
+%plasmid supercoiling leads just to broad (smeared) band that consist
+%of several topoisomers. Intercalating substances locally unwind DNA
+%and thereby can be used to quench supercoiling.  When adding the right
+%amount of such an intercalator, e.g. ethidium bromide or chloroquine,
+%plasmid supercoiling can be reduced to a level where topoisomers are
+%again separable in agarose gels. Increasing the amount of the intercalator
+%can further convert originally negatively supercoiled plasmids to
+%positively supercoiled plasmids.
+%
+%Similarly, intercalators can be used together with a supercoil
+%relaxing enzyme such as bacterial topoisomerase I to generate a series
+%of plasmid samples with continuously less supercoiling. Keller
+%combined the use of an intercalator (ethidium bromide) at different
+%concentrations in such a relaxation series and on agarose gels. All
+%bands from the original state of the plasmid to the fully relaxed form
+%can then be counted to determine the so-called linking number deficit
+%($\Delta Lk$) of a plasmid sample. $\Delta Lk$ is the difference of the
+%number of crossing of the two helix strands aroud each other (the
+%linking number) in the supercoiled plasmid and the relaxed form, where
+%the helix has about \SIrange{10.4}{10.5}{bp} per helix turn.
+%
 Mori and Johnson first suggested that supercoiling could underlie the
 regulation of hundreds of genes during the light/dark (diurnal) cycle
 in cyanobacteria \cite{Mori2001}. Indeed, genome compaction varied
-over the diurnal cycle \cite{Smith2006}. 
+over the diurnal cycle \cite{Smith2006}.  \TODO{Then \cite{Woelfle2007}
+and  \cite{Vijayan2009},}
+
 
 conflicting results and interpretations in two papers
 \cite{Woelfle2007} vs. \cite{Vijayan2009},
@@ -299,11 +302,10 @@ recapitulated Keller's band counting method but using chloroquine
 instead of ethidium bromide (EtBr) as the intercalating agent
 (Fig. \ref{fig:keller}).
 %
-
 \TODO{SV40 viral propagated in and isolated from African green monkey
   cells (CV-1), where negative supercoiling is presumably induced by
   nucleosomes ... in vitro relaxation with topoI ()}
-
+%
 In Keller's protocol \cite{Keller1975b} the indicated EtBr
 concentrations in the topoI reaction ranged from
 \SIrange[range-phrase=-]{0}{6.9}{\uM}. With a molecular mass of
@@ -489,7 +491,7 @@ respectively.
    
 \paragraph{Gradual Plasmid Relaxation in Dark Phase, Quick Supercoiling in
   Light.}  To clarify the unresolved issue whether DNA supercoiling is
-higher during the light or dark phases, we first measured supercoiling
+higher during the light or dark phases, we measured supercoiling levels
 of endogenous plasmids of \textit{Synechocystis sp.} PCC6803 (Moscow
 strain) \raim{and \textit{Synechococcus elongatus} PCC 7942} during
 diurnal light/dark (12 h/12 h) conditions and a prolonged dark phase
@@ -501,9 +503,9 @@ very low, limiting the amount of gels that can be run from one sample.
 
 Multiple putative topoisomer bands were detected at all sampled time
 points by agarose gel electrophoresis supplemented with chloroquine at
-either \SI{1}{\ugml} (Fig. \ref{fig:diurnalcq}A) or \SI{20}{\ugml}
-(Fig. \ref{fig:diurnalcq}B). \scyst{} contains three short
-plasmids, two at 2.4 kb \cite{Yang1993b, Yang1994} and one at 5.2 kb
+either \SI{1}{\ugml} or \SI{20}{\ugml}
+(Fig. \ref{fig:diurnalcq}A,B). \scyst{} contains three short plasmids,
+two at 2.4 kb \cite{Yang1993b, Yang1994} and one at 5.2 kb
 \cite{Xu1997b} . Restriction analysis and Southern blots confirmed
 that the most pronounced topoisomer bands were obtained for plasmid
 pCA2.4\_M (Fig. \ref{fig:diurnalcq}C \& D).
@@ -753,7 +755,7 @@ of the true $\Delta Lk$ based on the distance of topoisomer and
 relaxed DNA bands in the topoisomerase I relaxation experiment in
 Figure \ref{fig:diurnalcq}G.
 
-\bibliographystyle{plain}
+\bibliographystyle{unsrt}
 %% SWITCH between global and local/git bibtex file
 %% and use `bibexport -o cqgels.bib cqgels.aux` to update local
 % citations for goi.tex
