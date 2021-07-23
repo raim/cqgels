@@ -16,6 +16,7 @@
 \usepackage{setspace}
 \usepackage{natbib}
 
+\def\cite#1{\hypersetup{citecolor=Teal}\citep{#1}} %changes colour of citep link to Teal.
 
 % clean math
 \usepackage{amsfonts}
@@ -214,15 +215,12 @@ buffer to quench all negative supercoiling of pUC19 extracted from
 both, the DNA binding affinity of CQ and the induced DNA unwinding
 angle, on the ionic strength of the buffer. Lower levels of CQ were
 required to fully relax \textit{in vivo} pUC19 supercoiling than were
-used by Woelfle \textit{et al.}. Next, we analyzed the \textit{in vivo}
+used by \citet{Woelfle2007}. Next, we analyzed the \textit{in vivo}
 supercoiling of endogenous plasmids of \textit{Synechococcus
   elongatus} and \textit{Synechocystis sp.} PCC 6803, at two different
 CQ concentrations.  This clearly indicated that negative supercoiling
 of plasmids does not increase but decreases in the dark phase, and
 progressively decreases further in prolonged darkness.
-
-
-
 
 % now start line numbers
 \linenumbers
@@ -266,11 +264,11 @@ in turn influences the transcription rates of many genes \cite{Dorman2019}.
 %linking number) in the supercoiled plasmid and the relaxed form, where
 %the helix has about \SIrange{10.4}{10.5}{bp} per helix turn.
 %
-Mori and Johnson first suggested that supercoiling could underlie the
+\citet{Mori2001} first suggested that supercoiling could underlie the
 regulation of hundreds of genes during the light/dark (diurnal) cycle
-in cyanobacteria \cite{Mori2001}. Indeed, genome compaction varied
+in cyanobacteria. Indeed, genome compaction varied
 over the diurnal cycle in \textit{Synechococcus elongatus} PCC 7942
-\cite{Smith2006}. Woelfle \etal{} \cite{Woelfle2007} then used an old
+\cite{Smith2006}. \citet{Woelfle2007} then used an old
 method, separation of plasmid topoisomers by chloroquine-supplemented
 agarose gel electrophoresis, to show that the supercoiling level of
 its endogenous plasmid varies over the light/dark cycle, and variation
@@ -287,13 +285,13 @@ mobilities of more and less supercoiled plasmid samples.
 We first review the principles of agarose gel electrophoresis of
 plasmids in the presence of DNA intercalators.  To establish the
 effect of CQ on plasmids, we recapitulated Keller's band counting
-method but using chloroquine instead of ethidium bromide (EtBr) as the
+method but using CQ instead of ethidium bromide (EtBr) as the
 intercalating agent, and the pUC19 plasmid isolated from
-\textit{E. coli} culture. Applying different CQ concentrations and
-topoisomerase I timeseries to a small endogenous plasmid from \scyst{}
-shows that negative supercoiling increased (lower $\dlk$) quickly upon
-the onset of the light phase and progressivly decreased (higher
-$\dlk$) during a prolonged $\SI{48}{\hour}$ dark phase.
+\textit{E. coli} culture. Applying different CQ concentrations to a
+small endogenous plasmid from \scyst{} shows that negative
+supercoiling increased (lower $\dlk$) quickly upon the onset of the
+light phase and progressivly decreased (higher $\dlk$) during a
+prolonged $\SI{48}{\hour}$ dark phase.
 
 
 
@@ -312,11 +310,11 @@ form of the plasmid. The band is smeared since it actually contains
 several distinct species, denoted topoisomers, that travel at slightly
 different speeds in the gel.
 %
-Topoisomers are identical plasmid molecules that differ by their level
-of negative DNA supercoiling, quantified as the plasmid's linking
-number (\lk{}) \cite{Crick1976}. The terminology is from the
-mathematical field of topology, and \lk{} is the number of crossings
-of the two helix strands aroud each other.  In relaxed
+Topoisomers are identical plasmid molecules (isomers) that differ only
+by their level of negative DNA supercoiling, quantified as the
+plasmid's linking number (\lk{}) \cite{Crick1976}. The terminology is
+from the mathematical field of topology, and \lk{} is the number of
+crossings of the two helix strands aroud each other.  In relaxed
 (non-supercoiled) DNA the double helix adopts its minimal free energy
 structure with \SIrange{10.4}{10.5}{bp} per helix turn, \eg{} a
 circular DNA with \SI{1000}{bp} has a $\lkr=\numrange{95}{96}$. Since
@@ -381,7 +379,7 @@ only relax negatively supercoiled plasmids. However, on agarose gels
 the DNA now changes its migration speed and positively supercoiled
 plasmids travel again faster than the relaxed form.
 
-Woelfle \etal{} \cite{Woelfle2007} used \SI{10}{\ugml} of CQ in their
+\citet{Woelfle2007} used \SI{10}{\ugml} of CQ in their
 agarose gel analysis. They state but do not show that they have tested
 the relative mobility changes with different CQ levels, and assume
 that they are in the range were the plasmids are still negatively
@@ -402,7 +400,7 @@ is, because the supercoiling is quenched by chloroquine and the actual
 supercoiled plasmids travelled as multiple topoisomers. A ``median'' of
 their migration speed was used to calculate the $RM$ of each sample.
 
-Subsequently Vijayan \etal{} \cite{Vijayan2009} used the same species,
+Subsequently, \citet{Vijayan2009} used the same species,
 the same endogenous plasmid and the same principle to analyze plasmid
 supercoiling after gyrase inhibition and correlate it to global
 changes of the transcriptome. They only tested constant light
@@ -924,7 +922,7 @@ of the true $\Delta Lk$ based on the distance of topoisomer and
 relaxed DNA bands in the topoisomerase I relaxation experiment in
 Figure \ref{fig:diurnalcq}G.
 
-\bibliographystyle{unsrt}
+\bibliographystyle{plainnat} %abbrvnat}%unsrt}
 \setlength{\bibsep}{0.0pt}
 \begin{spacing}{0.9}
   %% SWITCH between global and local/git bibtex file
