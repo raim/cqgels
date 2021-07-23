@@ -321,72 +321,73 @@ circular DNA with \SI{1000}{bp} has a $\lkr=\numrange{95}{96}$. Since
 this depends on the size of the molecule, levels of DNA superocoiling
 are compared as the difference to this relaxed state linking number,
 $\dlkr=\lk-\lkr$ and as the supercoiling density
-$\sigma=\frac{\dlkr}{\lkr}$.  Negatively supercoiled DNA has $\dlk<0$
+$\sigma=\frac{\dlkr}{\lkr}$.  Negatively supercoiled DNA has $\dlkr<0$
 and positively supercoiled DNA has $\dlkr>0$.  Plasmids isolated from
 \textit{E. coli} typically have $\sigma=\numrange{-0.08}{-0.06}$,
 depending on the growth phase \cite{Liu2018}. Relative topoisomer
 abundances follow a Boltzmann distribution around a mean level of
 $\sigma$ \cite{Pulleyblank1975, Depew1975, Keller1975b}.
 
-Now, supercoiled plasmids (\texttt{ccc}) form a more compact molecule than
+Supercoiled plasmids (\texttt{ccc}) form a more compact molecule than
 relaxed plasmids. This is achieved by a higher level structure where
 two double helices wind around each other to compensate for the
 torsional strain on the double helix. This structure, a so-called
 plectoneme, is the origin of the term supercoiling, since it is a
 doubly coiled structure: the DNA double helix forms a higher order
-``double helix''. This more compact structure migrates quicker through
+``double helix''. The more compact plasmids migrate quicker through
 the polymeric meshwork of an agarose gel.
 %
 If plasmids are artificially relaxed with a nicking-closing enzyme
-(NC) such as bacterial topoisomerase I they are still \texttt{ccc} but
+(NC), such as bacterial topoisomerase I, they are still \texttt{ccc} but
 now migrate at a speed similar to the \texttt{oc} form. NC enzymes
 introduce a single strand break. The torsional strain in the
 supercoiled helix leads to rotation of the single stranded ends. The
 enzyme then ligates (closes) the ends again and releases a plasmid
 with less supercoiling. This relaxation will result in a Boltzmann
-distribution of plasmids around $\dlkr=0$, with some slightly
+distribution of plasmids around $\dlkr=0$, with some 
 positively and some negatively supercoiled \cite{Depew1975}.  These
 latter species are already more compact then the relaxed form and they
 form distinct bands ``below'' the \texttt{oc} band.
 
 To separate the \textit{in vivo} levels of supercoiling on agarose
-gels and intercalating substance can be added to the agarose gel and
-the gel buffer.  Intercalating substances reduce the angle between the
-two bases they bind to, \ie{}, the locally unwind the helix. This
-absorbs some of the torsional strain of the underwound helix of
-negatively supercoiled DNA, and thus reduced the level of
-supercoiling.  When adding the right amount of the intercalator,
-supercoiling is reduced to an extent which can be separated on the
-agarose gel.  A similar principle can be used to generate a series of
-plasmids, starting from the \textit{in vivo} level of supercoiling and
-all the way to the fully relaxed form. The intercalator is simply
-added to the reaction mix, supercoiled plasmids become relaxed and the
-NC enzyme can only remove the remaining level of DNA supercoiling.
-After washing out the intercalator the formerly quenched supercoiling
-is re-introduced. Keller \cite{Keller1975b} introduced an elegant
-method where different concentrations of the intercalator are used
-both in the NC reaction mix and subsequently on agarose gels to
-separate topoisomers. This allows to simply count all bands from the
+gels an intercalating substance can be added to the agarose gel and
+the gel buffer.  Intercalating substances reduce the helix rotation
+angle between the two bases they bind to, \ie{}, the locally unwind
+the helix. This absorbs some of the torsional strain of the underwound
+helix of negatively supercoiled DNA, and thus reduces the apparent
+level of supercoiling.  When adding the right amount of the
+intercalator, supercoiling is reduced to an extent which can be
+separated on the agarose gel.  A similar principle can be used to
+generate a series of plasmids, starting from the \textit{in vivo}
+level of supercoiling and all the way to the fully relaxed form. The
+intercalator is simply added to the reaction mix, supercoiled plasmids
+are partially relaxed and the NC enzyme can only remove the remaining
+level of DNA supercoiling.  After washing out the intercalator the
+formerly quenched supercoiling is re-introduced. 
+\citet{Keller1975b} developed an elegant method where different
+concentrations of the intercalator are used both, in the NC reaction
+mix and subsequently on agarose gels to separate topoisomers. Keller's
+band counting method allows to simply count all bands from the
 original untreated plasmid to the fully relaxed form across the series
-of gels. This is simply known as Keller's band counting method, and
-allows to measure the exact \lk{} of circular DNA isolated from cell
-cultures.
+of gels, and thereby determine \dlkr{} of circular DNA
+isolated from cell cultures.
 %
 Notably, the unwinding property of intercalators is not saturated at
 full DNA relaxation. Adding more will result in positively supercoiled
-plasmids. These are not affected by typical NC enzymes, since they
-only relax negatively supercoiled plasmids. However, on agarose gels
-the DNA now changes its migration speed and positively supercoiled
-plasmids travel again faster than the relaxed form.
+plasmids. These are not affected by typical (ATP-independent) NC
+enzymes, which only relax negatively supercoiled plasmids. In
+contrast, on agarose gels the DNA now changes its migration speed and
+positively supercoiled plasmids travel again faster than the relaxed
+form.
 
 \citet{Woelfle2007} used \SI{10}{\ugml} of CQ in their
 agarose gel analysis. They state but do not show that they have tested
 the relative mobility changes with different CQ levels, and assume
 that they are in the range were the plasmids are still negatively
-supercoiled.  That is, plasmids that migrated faster on the gel where
-interpreted as originally \textit{in vivo} more supercoiled (more
+supercoiled.  That is, plasmids that migrated faster on the gel were
+interpreted as originally (\textit{in vivo}) more supercoiled (more
 negative supercoiling, lower $\lk$). This is reflected in their
-gel band annotation the equation they used to calculate an average
+gel band annotation and the equation they used to calculate an average
 relative mobility ($RM$) of each sample:
 
 \begin{equation}
@@ -420,7 +421,7 @@ denote as a ``rel'' for relaxed. They calculated a ``mean'' migration
 distance of the supercoiled topoisomers. The equation likely contains
 an error, since $oc-rel$ would be a negative value. Independent of
 these unclarities the subtract the $RM$ of Woelfle \etal{} from
-1. This implies that now they interpret faster migrating topoisomers
+1. This implies that they interpret faster migrating topoisomers
 as originally less negatively supercoiled. At high intercalator
 concentration these should be more positively supercoiled and travel
 faster.
@@ -430,16 +431,19 @@ differences clearer:
 
 \begin{align}
   RM &= \frac{\text{target} - \text{upper}}{\text{lower} - \text{upper}}\\
-  RM &=1-\frac{\text{target} - \text{upper}}{\lvert \text{upper} - \text{lower} \rvert}\,
+  RM &=1-\frac{\text{target} - \text{upper}}{\lvert \text{upper} - \text{lower} \rvert}\,,
 \end{align}
 
-where ``upper'' and ``lower'' refers to their position on the original gel
-images, and ``target'' is the mean or median of the topoisomer distribution.
-
-This different interpretation of the gels of Woelfle \etal{} would
+where ``upper'' and ``lower'' refers to their position on the original
+gel images, and ``target'' is the mean or median of the topoisomer
+distribution.  Despite the opposite meaning of $RM$, both publications
+interpret a higher $RM$ as a higher level of negative DNA
+supercoiling.
+ 
+This different interpretation of the gels in \citet{Woelfle2007} would
 imply that negative supercoiling of plasmids rapidly increases upon
 onset of the light phase and would progressively decrease in prolonged
-darkness.  Vijayan \etal{} measured supercoiling only in constant
+darkness.  \citet{Vijayan2009} measured supercoiling only in constant
 light conditions, and did not mention or discuss these discrepancies.
 Thus, the DNA supercoiling dynamics within the natural light/dark
 cycle of cyanobacteria remains unclear.
