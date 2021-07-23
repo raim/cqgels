@@ -41,11 +41,6 @@
 \newcommand{\cuparrow}{\textcolor{blue}{$\pmb\uparrow$}}
 \newcommand{\cdoarrow}{\textcolor{red}{$\pmb\downarrow$}}
 
-\newcommand{\cqgel}{\ensuremath{C_{\text{gel}}}}
-\newcommand{\cqtop}{\ensuremath{C_{\text{topoI}}}}
-
-
-
 % nice:
 %\usepackage{markdown}
 
@@ -136,6 +131,20 @@
 \newcommand{\ox}{\ensuremath{\text{O$_2$}}}
 \newcommand{\cox}{\ensuremath{\text{CO$_2$}}}
 
+\newcommand{\cqgel}{\ensuremath{C_{\text{gel}}}}
+\newcommand{\cqtop}{\ensuremath{C_{\text{topoI}}}}
+\newcommand{\lk}{\ensuremath{\text{Lk}}}
+\newcommand{\lkr}{\ensuremath{\text{Lk}_0}}
+\newcommand{\dlk}{\ensuremath{\Delta\text{Lk}}}
+\newcommand{\dlkr}{\ensuremath{\Delta\text{Lk}_0}}
+
+\newcommand{\etal}{\textit{et~al.}}
+\newcommand{\ie}{\textit{i.e.}}
+\newcommand{\eg}{\textit{e.g.}}
+\newcommand{\via}{\textit{via}}
+
+
+
 % EDITING: rm for publication
 \usepackage{todonotes}
 \newcommand{\raim}[1]{\begingroup{\color{purple}#1}\endgroup}
@@ -161,7 +170,7 @@
 Salima R\"udiger\textsuperscript{1}, 
 Anne Rediger\textsuperscript{3},
 Adrian K\"olsch\textsuperscript{4},
-Dennis Dienst\textsuperscript{5},
+Dennis Dienst\textsuperscript{1},
 Ilka M. Axmann\textsuperscript{1},
 Rainer Machn\'e\textsuperscript{1,2,*},
 \\
@@ -259,8 +268,68 @@ in turn influences transcription rate of many genes \cite{Dorman2019}.
 Mori and Johnson first suggested that supercoiling could underlie the
 regulation of hundreds of genes during the light/dark (diurnal) cycle
 in cyanobacteria \cite{Mori2001}. Indeed, genome compaction varied
-over the diurnal cycle \cite{Smith2006}.  \TODO{Then \cite{Woelfle2007}
-and  \cite{Vijayan2009},}
+over the diurnal cycle in \textit{Synechococcus elongatus} PCC 7942
+\cite{Smith2006}. Woelfle \etal{} \cite{Woelfle2007} then used
+an old method, separation of plasmid topoisomers by agarose gel
+electrophoresis, to show that the supercoiling level of its
+endogenous plasmid varies over the light/dark cycle, and variation
+continued in constant light after entrainment to light/dark
+cycles. The latter observation is considered a hallmark of the
+presence of a circadian clock.  Specifically, they noted a drop in
+plasmid supercoiling already \SI{20}{\minute} after the transition to
+light, as well as continuous increase in DNA supercoiling in prolonged
+\SI{72}{\hour} darkness.
+
+This method to measure plasmid supercoiling is the subject of this
+contribution and requires some background.
+Textbook plasmid agarose gels show three distinct bands: the
+``linear'' form which underwent a double strand break, likely during
+extraction; and the \texttt{oc } (open circular) band, which has only
+one or more single strand breaks and thus is still circular. The
+latter travels slowest on the gel. And thirdly, intact plasmids travel
+fastest as a smeared band, widely known as the \texttt{ccc} band, for
+the covalently closed circular form of the plasmid. The band is
+smeared since it actually contains several distinct species, denoted
+topoisomers, that travel at slightly different speeds in the gel.
+%
+Topoisomers are identical plasmid molecules that differ by their level
+of negative DNA supercoiling, quantified as the plasmid's linking
+number (\lk{}) \cite{Crick1976}. The terminology is from the
+mathematical field of topology, and \lk{} is the number of crossings
+of the two helix strands aroud each other.  In relaxed
+(non-supercoiled) DNA the double helix adopts its minimal free energy
+structure with \SIrange{10.4}{10.5}{bp} per helix turn, \eg{} a
+circular DNA with \SI{1000}{bp} has a $\lkr=\numrange{95}{96}$. Since
+this depends on the size of the molecule, levels of DNA superocoiling
+are compared as the difference to this relaxed state linking number,
+$\dlkr=\lk-\lkr$.  Negatively supercoiled DNA has $\dlk<0$ and
+positively supercoiled DNA has $\dlkr>0$, or as the supercoiling
+density $\sigma=\frac{\dlkr}{\lkr}$.  Plasmids isolated from
+\textit{E. coli} typically have $\sigma=\numrange{-0.08}{-0.06}$,
+depending on the growth phase \cite{Liu2018}. Relative topoisomer
+abundances follow a Boltzmann distribution around a mean level of
+$\sigma$ \cite{Pulleyblank1975}.
+
+Now, supercoiled plasmids (\texttt{ccc}) form a more compact molecule than
+relaxed plasmids. This is achieved by a higher level structure where
+two double helices wind around each other to compensate for the
+torsional strain on the double helix. This structure, a so-called
+plectoneme, is the origin of the term supercoiling, since it is a
+doubly coiled structure: the DNA double helix forms a higher order
+``double helix''. This more compact structure migrates quicker through
+the polymeric meshwork of an agarose gel.
+%
+If plasmids are artificially relaxed with a nicking-closing enzyme
+such as bacterial topoisomerase I they are still \texttt{ccc} but now
+migrate at a speed similar to the \texttt{oc} form. Relaxation will
+result in a Boltzmann distribution of plasmids around $\dlkr=0$, with
+some slightly positively and some negatively supercoiled.  These
+latter species are already more compact then the relaxed form and they
+form distinct bands ``below'' the \texttt{oc} band.  At this low level
+of supercoiling plasmids with a single difference in \dlkr{} migrate
+slightly faster and form distinct bands.
+
+\cite{Vijayan2009}
 
 
 conflicting results and interpretations in two papers
@@ -301,7 +370,7 @@ recapitulated Keller's band counting method but using chloroquine
 instead of ethidium bromide (EtBr) as the intercalating agent
 (Fig. \ref{fig:keller}).
 %
-\TODO{SV40 viral propagated in and isolated from African green monkey
+\TODO{SV40 viral genome propagated in and isolated from African green monkey
   cells (CV-1), where negative supercoiling is presumably induced by
   nucleosomes ... in vitro relaxation with DNA-relaxing enzyme
   purified from human tissue culture cells (KB-3)}
@@ -358,9 +427,11 @@ the original level supercoiling of SV40 and pUC19 was $\approx$30x and
 $\approx$1000x higher in the reaction buffers than in the gels,
 respectively.
 
+\TODO{sequence specificity, preference for AT}
 
 
-\TODO{gel buffers have high ionic strength, required for gel electrophoresis,}
+\TODO{TBE has high ionic strength, required for gel electrophoresis,
+keller used buffer recirculation}
 \TODO{EtBr:DNA dissociation constant, dependence on ionic strength}
 \TODO{more or less undwinding angle and lower or higher dissociation
   constant with ionic strength?\\ The unwinding angle for chloroquine
@@ -593,19 +664,19 @@ enzyme and the intercalator.
 Diurnal plasmid supercoiling time-series were established at
 conditions and time-points identical to those used for the
 transcriptome study in ref. \cite{Lehmann2013, Beck2014}.  The
-glucose-tolerant and motile wild-type strain PCC-M of Synechocystis
-sp. PCC 6803 (obtained from S.  Shestakov, Moscow State University,
-Russia), was grown photoautotrophically in BG11-medium at
-\SI{30}{\celsius} under continuous illumination with white light at
-\SI{80}{\photons} (Versatile environmental test chamber; Sanyo) and
-with a continuous stream of air in two airlift reactors (Schlenk
-tubes) with 800 mL culture volume.  The optical density at 750 nm of
-the culture was monitored (Specord200 Plus; Analytik Jena). Cultures
-where then entrained to 12 h/12 h light/dark cycles for three
-consecutive days and diluted to $\OD{}\approx 0.5$ one day before
-sampling. Samples for plasmid analysis and \OD{} were then taken at
-the indicated timepoints for 1.5 days. One culture was kept in dark
-for the last 12 h of sampling.
+glucose-tolerant and motile wild-type strain PCC-M of
+\textit{Synechocystis} sp. PCC 6803 (obtained from S.  Shestakov,
+Moscow State University, Russia), was grown photoautotrophically in
+BG11-medium at \SI{30}{\celsius} under continuous illumination with
+white light at \SI{80}{\photons} (Versatile environmental test
+chamber; Sanyo) and with a continuous stream of air in two 
+Schlenk tube reactors with 800 mL culture volume.  The optical
+density at 750 nm of the culture was monitored (Specord200 Plus;
+Analytik Jena). Cultures where then entrained to 12 h/12 h light/dark
+cycles for three consecutive days and diluted to $\OD{}\approx 0.5$
+one day before sampling. Samples for plasmid analysis and \OD{} were
+then taken at the indicated timepoints for 1.5 days. One culture was
+kept in dark for the last 12 h of sampling.
 
 \paragraph{Plasmid Extraction from \scyst{} Cultures.}
 \SI{25}{\mL} of cell culture were mixed with \SI{25}{\mL} of
