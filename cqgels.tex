@@ -13,6 +13,7 @@
 
 % clean citationshttps://www.overleaf.com/project/60d45824b01a0838903d992f
 %\usepackage{cite}
+\usepackage{setspace}
 \usepackage{natbib}
 
 
@@ -190,7 +191,7 @@ Rainer Machn\'e\textsuperscript{1,2,*},
 
 \end{flushleft}
 
-\section*{Abstract}
+\paragraph*{Abstract}
 In cyanobacteria DNA supercoiling varies over the diurnal light/dark
 cycle and is integrated with temporal programs of transcription and
 replication. Woelfe \textit{et al.} (2007, PNAS) have reported that
@@ -321,13 +322,13 @@ structure with \SIrange{10.4}{10.5}{bp} per helix turn, \eg{} a
 circular DNA with \SI{1000}{bp} has a $\lkr=\numrange{95}{96}$. Since
 this depends on the size of the molecule, levels of DNA superocoiling
 are compared as the difference to this relaxed state linking number,
-$\dlkr=\lk-\lkr$.  Negatively supercoiled DNA has $\dlk<0$ and
-positively supercoiled DNA has $\dlkr>0$, or as the supercoiling
-density $\sigma=\frac{\dlkr}{\lkr}$.  Plasmids isolated from
+$\dlkr=\lk-\lkr$ and as the supercoiling density
+$\sigma=\frac{\dlkr}{\lkr}$.  Negatively supercoiled DNA has $\dlk<0$
+and positively supercoiled DNA has $\dlkr>0$.  Plasmids isolated from
 \textit{E. coli} typically have $\sigma=\numrange{-0.08}{-0.06}$,
 depending on the growth phase \cite{Liu2018}. Relative topoisomer
 abundances follow a Boltzmann distribution around a mean level of
-$\sigma$ \cite{Pulleyblank1975}.
+$\sigma$ \cite{Pulleyblank1975, Depew1975, Keller1975b}.
 
 Now, supercoiled plasmids (\texttt{ccc}) form a more compact molecule than
 relaxed plasmids. This is achieved by a higher level structure where
@@ -391,7 +392,7 @@ gel band annotation the equation they used to calculate an average
 relative mobility ($RM$) of each sample:
 
 \begin{equation}
-  RM = \frac{median - Rel}{SC - Rel}
+  RM = \frac{\text{median} - \text{Rel}}{\text{SC} - \text{Rel}}
 \end{equation}
 where ``Rel'' denotes the migration distance of the upper (slowest
 migrating) band, actually the still present \texttt{oc} form.
@@ -411,7 +412,7 @@ this issue they have further reverted the interpretation of migration
 speed to:
 
 \begin{equation}
-  RM = 1 - \frac{mean - oc}{oc - rel}
+  RM = 1 - \frac{\text{mean} - \text{oc}}{\text{oc} - \text{rel}}
 \end{equation}
 
 where the annotated gels indicate that they inpret the upper, slowest
@@ -426,13 +427,16 @@ as originally less negatively supercoiled. At high intercalator
 concentration these should be more positively supercoiled and travel
 faster.
 %
-Choosing more neutral band identifiers based on the gel images in
-the two publications makes these differences clearer:
+Choosing more neutral band identifiers makes these
+differences clearer:
 
 \begin{align}
-  RM &= \frac{target - upper}{lower - upper}\\
-  RM &=1-\frac{target - upper}{\lvert upper - lower \rvert}
+  RM &= \frac{\text{target} - \text{upper}}{\text{lower} - \text{upper}}\\
+  RM &=1-\frac{\text{target} - \text{upper}}{\lvert \text{upper} - \text{lower} \rvert}\,
 \end{align}
+
+where ``upper'' and ``lower'' refers to their position on the original gel
+images, and ``target'' is the mean or median of the topoisomer distribution.
 
 This different interpretation of the gels of Woelfle \etal{} would
 imply that negative supercoiling of plasmids rapidly increases upon
@@ -442,8 +446,23 @@ light conditions, and did not mention or discuss these discrepancies.
 Thus, the DNA supercoiling dynamics within the natural light/dark
 cycle of cyanobacteria remains unclear.
 
-\paragraph{Keller's Band Counting Method with Chloroquine.}
+\begin{figure}[ht!]
+    \includegraphics[width=\textwidth]{figures/keller_puc19.jpg}
+  \caption{\textbf{pUC19 on 1.2 \% agarose gel supplemented with 0--8
+      \si{\ugml} chloroquine.} Samples of the pUC19 plasmid, isolated
+    from \textit{E. coli}, were treated with 0--3000 \si{\ugml}
+    chloroquine and topoisomerase I as indicated (lanes). The sample
+    “C” is untreated pUC19 as control. Size marker "S" is the
+    GeneRuler 1 kb DNA Ladder. The samples were split an separated on
+    6 agaose gels, each supplement with a chloroquine concentration
+    from 0 to 8 \si{\ugml} as indicated (lower right). The top band
+    in each gel is the open circular form. The band between  2.5 kb and 3 kb
+    is the linear form of the plasmid.}
+  \label{fig:keller} 
+\end{figure}
 
+
+\paragraph{Keller's Band Counting Method with Chloroquine and pUC19.}
 %
 \TODO{SV40 viral genome propagated in and isolated from African green monkey
   cells (CV-1), where negative supercoiling is presumably induced by
@@ -500,7 +519,7 @@ TBE), and \SIrange{1000}{3000}{\ugml} in the CutSmart reaction buffer
 
 \paragraph{Discussion: CQ vs EtBr.}
 In summary, the intercalator concentration required to fully quench
-the original level supercoiling of SV40 and pUC19 was $\approx$30x and
+the original level of supercoiling of SV40 and pUC19 was $\approx$30x and
 $\approx$1000x higher in the reaction buffers than in the gels,
 respectively.
 
@@ -527,21 +546,6 @@ keller used buffer recirculation}
 
 
 
-
-\begin{figure}[ht!]
-    \includegraphics[width=\textwidth]{figures/keller_puc19.jpg}
-  \caption{\textbf{pUC19 on 1.2 \% agarose gel supplemented with 0--8
-      \si{\ugml} chloroquine.} Samples of the pUC19 plasmid, isolated
-    from \textit{E. coli}, were treated with 0--3000 \si{\ugml}
-    chloroquine and topoisomerase I as indicated (lanes). The sample
-    “C” is untreated pUC19 as control. Size marker "S" is the
-    GeneRuler 1 kb DNA Ladder. The samples were split an separated on
-    6 agaose gels, each supplement with a chloroquine concentration
-    from 0 to 8 \si{\ugml} as indicated (lower right). The top band
-    in each gel is the open circular form. The band between  2.5 kb and 3 kb
-    is the linear form of the plasmid.}
-  \label{fig:keller} 
-\end{figure}
 
 
 
@@ -644,15 +648,16 @@ keller used buffer recirculation}
    
 \paragraph{Gradual Plasmid Relaxation in Dark Phase, Quick Supercoiling in
   Light.}  To clarify the unresolved issue whether DNA supercoiling is
-higher during the light or dark phases, we measured supercoiling levels
-of endogenous plasmids of \textit{Synechocystis sp.} PCC6803 (Moscow
-strain) \raim{and \textit{Synechococcus elongatus} PCC 7942} during
-diurnal light/dark (12 h/12 h) conditions and a prolonged dark phase
-(12 h light, followed by 24 h dark).  A large sample volume
-(\SI{25}{\mL} was required to obtain enough plasmids, and direct
-mixing of the sample with an equal volume of pre-cooled pure ethanol
-was key to successful plasmid extraction. However, the yield was still
-very low, limiting the amount of gels that can be run from one sample.
+higher during the light or dark phases, we measured supercoiling
+levels of endogenous plasmids of \textit{Synechocystis sp.} PCC6803
+(Moscow strain) \raim{and \textit{Synechococcus elongatus} PCC 7942}
+during diurnal light/dark (12 h/12 h) conditions and a prolonged dark
+phase (12 h light, followed by 24 h dark).  A large sample volume
+(\SI{25}{\mL}) was required to obtain enough plasmids, and direct
+mixing of the sample with an equal volume of pre-cooled
+(\SI{-20}{\celsius}) pure undenatured ethanol was key to successful
+plasmid extraction. However, the yield was still very low, limiting
+the amount of gels that can be run from one sample.
 
 Multiple putative topoisomer bands were detected at all sampled time
 points by agarose gel electrophoresis supplemented with chloroquine at
@@ -693,8 +698,9 @@ were only $\Delta \Delta \overline{Lk} \approx 1$, and $\Delta \Delta
 \overline{Lk} \approx 2$ after the prolonged dark phase.
 
 
-\section{Discussion}
+\section{Conclusion}
 
+\TODO{
 supercoiling of pCA is higher during the day, and lower during the
 night, extended night relaxes plasmid even more, consistent
 with the experiment by \cite{Woelfle2007} if interpreted
@@ -707,8 +713,17 @@ dark phase as shown in Fig XYZ of the publication,
 
 vijayan09: corrected the intepretation of gels, but failed to mention
 it!
+}
 
-\clearpage
+\section*{Data Availability}
+All gel images and electropherogramms are available on request. Our
+chloroquine agarose protocols \TODO{will be made} available at
+\url{protocols.io}.
+
+\section*{Funding}
+RM was funded by the \textit{Deutsche Forschungsgemeinschaft}, grants
+AX~84/4-1, STA~850/30-1 and EXC-2048/1--project ID 390686111. 
+
 
 \section{Materials and Methods}
 
@@ -910,10 +925,13 @@ relaxed DNA bands in the topoisomerase I relaxation experiment in
 Figure \ref{fig:diurnalcq}G.
 
 \bibliographystyle{unsrt}
-%% SWITCH between global and local/git bibtex file
-%% and use `bibexport -o cqgels.bib cqgels.aux` to update local
-% citations for goi.tex
-%\bibliography{/home/raim/ref/tata}
-\bibliography{cqgels}
+\setlength{\bibsep}{0.0pt}
+\begin{spacing}{0.9}
+  %% SWITCH between global and local/git bibtex file
+  %% and use `bibexport -o cqgels.bib cqgels.aux` to update local
+  % citations for goi.tex
+  %\bibliography{/home/raim/ref/tata}
+  \bibliography{cqgels}
+\end{spacing}
 
 \end{document}
