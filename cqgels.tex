@@ -345,7 +345,7 @@ all the way to the fully relaxed form. The intercalator is simply
 added to the reaction mix, supercoiled plasmids become relaxed and the
 NC enzyme can only remove the remaining level of DNA supercoiling.
 After washing out the intercalator the formerly quenched supercoiling
-is re-introduced. Keller \cite{Keller1975} introduced an elegant
+is re-introduced. Keller \cite{Keller1975b} introduced an elegant
 method where different concentrations of the intercalator are used
 both in the NC reaction mix and subsequently on agarose gels to
 separate topoisomers. This allows to simply count all bands from the
@@ -353,46 +353,77 @@ original untreated plasmid to the fully relaxed form across the series
 of gels. This is simply known as Keller's band counting method, and
 allows to measure the exact \lk{} of circular DNA isolated from cell
 cultures.
-
-Notably, the unwinding property of intercalators is not saturated
-at the relaxed level. Adding more will result in positively supercoiled
+%
+Notably, the unwinding property of intercalators is not saturated at
+full DNA relaxation. Adding more will result in positively supercoiled
 plasmids. These are not affected by typical NC enzymes, since they
 only relax negatively supercoiled plasmids. However, on agarose gels
 the DNA now changes its migration speed and positively supercoiled
 plasmids travel again faster than the relaxed form.
 
-
-\cite{Vijayan2009}
-
-
-conflicting results and interpretations in two papers
-\cite{Woelfle2007} vs. \cite{Vijayan2009},
-hidden by a different formula to determine relative mobility $RM$:
-
-\cite{Woelfle2007} evaluated their gel as:
+Woelfle \etal{} \cite{Woelfle2007} used \SI{10}{\ugml} of CQ in their
+agarose gel analysis. They state but do not show that they have tested
+the relative mobility changes with different CQ levels, and assume
+that they are in the range were the plasmids are still negatively
+supercoiled.  That is, plasmids that migrated faster on the gel where
+interpreted as originally \textit{in vivo} more supercoiled (more
+negative supercoiling, lower $\lk$). This is reflected in their
+gel band annotation the equation they used to calculate an average
+relative mobility ($RM$) of each sample:
 
 \begin{equation}
-  RM = (median - Rel)/(SC - Rel)
+  RM = \frac{median - Rel}{SC - Rel}
 \end{equation}
-upper band: Rel (O.C.!), lower band: SC,
+where ``Rel'' denotes the migration distance of the upper (slowest
+migrating) band, actually the still present \texttt{oc} form.
+A lower, fastest migrating band that also appeared in all samples
+is denoted as ``SC''. However, it is unclear what this band actually
+is, because the supercoiling is quenched by chloroquine and the actual
+supercoiled plasmids travelled as multiple topoisomers. A ``median'' of
+their migration speed was used to calculate the $RM$ of each sample.
 
-while \cite{Vijayan2009} used: 
+Subsequently Vijayan \etal{} \cite{Vijayan2009} used the same species,
+the same endogenous plasmid and the same principle to analyze plasmid
+supercoiling after gyrase inhibition and correlate it to global
+changes of the transcriptome. They only tested constant light
+conditions.  However, they have subtly changed the protocol and used
+\SI{15}{\ugml} of CQ in the agarose gels. Without any discussion of
+this issue they have further reverted the interpretation of migration
+speed to:
+
 \begin{equation}
-  RM = 1 - (mean - oc)/(oc - rel)
+  RM = 1 - \frac{mean - oc}{oc - rel}
 \end{equation}
 
-upper band: oc (open circular), lower band: rel for relaxed,
-unclear why oc and rel would travel differently,
-inconsistent signs - likely $|oc-rel|=rel-oc$.
-       
-Direct comparison:
+where the annotated gels indicate that they inpret the upper, slowest
+migrating band as the \texttt{oc} form. They also observe a fast
+migrating band in all samples which for unexplained reasons they
+denote as a ``rel'' for relaxed. They calculated a ``mean'' migration
+distance of the supercoiled topoisomers. The equation likely contains
+an error, since $oc-rel$ would be a negative value. Independent of
+these unclarities the subtract the $RM$ of Woelfle \etal{} from
+1. This implies that now they interpret faster migrating topoisomers
+as originally less negatively supercoiled. At high intercalator
+concentration these should be more positively supercoiled and travel
+faster.
+%
+Choosing more neutral band identifiers based on the gel images in
+the two publications makes these differences clearer:
 
 \begin{align}
-  RM =& (target - upper)/lower - upper)\\
-  RM =& 1 - (target - upper)/(upper - lower)
+  RM &= \frac{target - upper}{lower - upper}\\
+  RM &=1-\frac{target - upper}{\lvert upper - lower \rvert}
 \end{align}
 
+This different interpretation of the gels of \cite{Woelfle2007} would
+imply that negatively supercoiling rapidly increases upon onset of the
+light phase and would progressively decrease in prolonged darkness.
+Vijayan \etal{} measured supercoiling only in constant
+light conditions, and did not mention or discuss this different
+interpretations. Thus, the DNA supercoiling dynamics within the natural
+light/dark cycle remains unclear.
 
+\TODO{short summary}
 
 
 \section{Results}
