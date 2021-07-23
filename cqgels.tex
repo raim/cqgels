@@ -234,7 +234,7 @@ energy stored in underwound DNA can be channeled locally at gene
 promoters to open and ``read'' DNA in transcription and replication.
 In Bacteria, the level of DNA supercoiling is homeostatically controlled by
 enzymes but also depends on the transcription and replication, and
-in turn influences transcription rate of many genes \cite{Dorman2019}. 
+in turn influences the transcription rates of many genes \cite{Dorman2019}. 
 %
 %The genome-wide levels of DNA supercoiling are difficult to measure,
 %and often endogenous or transfected plasmids are used as a proxy
@@ -320,14 +320,47 @@ doubly coiled structure: the DNA double helix forms a higher order
 the polymeric meshwork of an agarose gel.
 %
 If plasmids are artificially relaxed with a nicking-closing enzyme
-such as bacterial topoisomerase I they are still \texttt{ccc} but now
-migrate at a speed similar to the \texttt{oc} form. Relaxation will
-result in a Boltzmann distribution of plasmids around $\dlkr=0$, with
-some slightly positively and some negatively supercoiled.  These
+(NC) such as bacterial topoisomerase I they are still \texttt{ccc} but
+now migrate at a speed similar to the \texttt{oc} form. NC enzymes
+introduce a single strand break. The torsional strain in the
+supercoiled helix leads to rotation of the single stranded ends. The
+enzyme then ligates (closes) the ends again and releases a plasmid
+with less supercoiling. This relaxation will result in a Boltzmann
+distribution of plasmids around $\dlkr=0$, with some slightly
+positively and some negatively supercoiled \cite{Depew1975}.  These
 latter species are already more compact then the relaxed form and they
-form distinct bands ``below'' the \texttt{oc} band.  At this low level
-of supercoiling plasmids with a single difference in \dlkr{} migrate
-slightly faster and form distinct bands.
+form distinct bands ``below'' the \texttt{oc} band.
+
+To separate the \textit{in vivo} levels of supercoiling on agarose
+gels and intercalating substance can be added to the agarose gel and
+the gel buffer.  Intercalating substances reduce the angle between the
+two bases they bind to, \ie{}, the locally unwind the helix. This
+absorbs some of the torsional strain of the underwound helix of
+negatively supercoiled DNA, and thus reduced the level of
+supercoiling.  When adding the right amount of the intercalator,
+supercoiling is reduced to an extent which can be separated on the
+agarose gel.  A similar principle can be used to generate a series of
+plasmids, starting from the \textit{in vivo} level of supercoiling and
+all the way to the fully relaxed form. The intercalator is simply
+added to the reaction mix, supercoiled plasmids become relaxed and the
+NC enzyme can only remove the remaining level of DNA supercoiling.
+After washing out the intercalator the formerly quenched supercoiling
+is re-introduced. Keller \cite{Keller1975} introduced an elegant
+method where different concentrations of the intercalator are used
+both in the NC reaction mix and subsequently on agarose gels to
+separate topoisomers. This allows to simply count all bands from the
+original untreated plasmid to the fully relaxed form across the series
+of gels. This is simply known as Keller's band counting method, and
+allows to measure the exact \lk{} of circular DNA isolated from cell
+cultures.
+
+Notably, the unwinding property of intercalators is not saturated
+at the relaxed level. Adding more will result in positively supercoiled
+plasmids. These are not affected by typical NC enzymes, since they
+only relax negatively supercoiled plasmids. However, on agarose gels
+the DNA now changes its migration speed and positively supercoiled
+plasmids travel again faster than the relaxed form.
+
 
 \cite{Vijayan2009}
 
