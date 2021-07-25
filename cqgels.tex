@@ -297,7 +297,8 @@ prolonged $\SI{48}{\hour}$ dark phase.
 
 \section{Results and Discussion}
 
-\paragraph{CQ Gels and Discrepancies between Woelfle \etal{} and Vijyan \etal{}.}
+\subsection{CQ Gels and Discrepancies between Woelfle \etal{} and Vijyan \etal{}.}
+
 This method to measure plasmid supercoiling is the subject of this
 contribution and requires some background.  Textbook plasmid agarose
 gels show three distinct bands: the ``linear'' form which underwent a
@@ -474,7 +475,7 @@ cycle of cyanobacteria remains unclear.
 \end{figure}
 
 
-\paragraph{Keller's Band Counting Method with Chloroquine and pUC19.}
+\subsection{Keller's Band Counting Method with Chloroquine and pUC19.}
 %
 \TODO{SV40 viral genome (\SI{5.2}{kb}) propagated in and isolated
   from African green monkey cells (CV-1), where negative supercoiling
@@ -487,11 +488,7 @@ concentrations in the topoI reaction ranged from
 \SI{394.3}{\gram\per\mol}, the highest concentration is
 \SI{2.7}{\ugml}. In the gels the maximal concentration was
 \SI{0.06}{\ugml}. 
-%That is, in the topoI reaction, up to 45x more EtBr
-%was used in the topoisomerase I relaxtion reactions than in the gels
-%to achieve the similar plasmid relaxation effects.
-%
-%lanes 11 and 9 have in vivo supercoiling
+%keller fig 1/3: lanes 11 and 9 have in vivo supercoiling
 %
 Full relaxation of the SV40 DNA was achieved at
 $\cqgel=\SI{0.06}{\ugml}$ in the gel buffer (40 mM Tris-HCl (pH 7.9),
@@ -500,10 +497,6 @@ $\cqtop\approx\SI{1.7}{\ugml}$ (lane 9 Figures 1 and 3 of
 \cite{Keller1975b}: ca. $\SI{4.5}{\uM}$) in the topoI reaction buffer
 (10 mM Tris-HCl, 0.2 M NaCl, 0.05 mM dithiothreitol, 0.5 \% glycerol,
 0.2 mM Na$_2$-EDTA)\todo{re-check buffers}.
-%
-%That is, the CQ concentration required to fully quench all
-%supercoiling was $\approx$30 lower in the
-%gel buffer than in the topoI reaction buffer.
 
 \TODO{We ...pUC19 in E.coli}
 
@@ -525,23 +518,17 @@ supercoiling was \SIrange{1}{4}{\ugml} in the agarose gel buffer (0.5x
 TBE), and \SIrange{1000}{3000}{\ugml} in the CutSmart reaction buffer
 (see Methods for composition).
 %
-%That is, the CQ concentration required to fully quench all
-%supercoiling of pUC19 in \textit{E. coli} was $\approx$1000x lower in
-%the gel buffer than in the reaction buffer.
-
 Counting topoisomers across gels, our gels show that the untreated
 control has a $\dlkr=\numrange{-15}{-16}$. With \SI{2686}{bp} length,
 $\lkr\approx\numrange{256}{258}$, and thus $\sigma\approx0.06$, as expected
 for a plasmmid isolated from \textit{E. coli}.
 
-\paragraph{Discussion: CQ vs EtBr.}
+%\paragraph{Discussion: CQ vs EtBr.}
 In summary, the intercalator concentrations required to fully quench
 the original level of supercoiling of SV40 and pUC19 were $\approx$30x
 and $\approx$1000x higher in the reaction buffers than in the gels,
 respectively. The CQ concentrations were \numrange{100}{1000}x higher
 than the EtBr concentrations in \citet{Keller1975b}.
-
-%\TODO{sequence specificity, preference for AT}
 %
 EtBr binds to DNA with relatively high affinity, \eg{}
 $K_a=\SI{1.5e5}{\per\Molar}$ in \SI{0.2}{\Molar} Na$^+$
@@ -554,33 +541,19 @@ NaCl \footnote{$K_d=\SIrange{27}{2600}{\uM}$}
 \cite{KwakyeBerko1989}. Its DNA unwinding angle is lower and, unlike
 EtBr also depends on the ionic strength of the buffer, with a maximum
 of \SI{17}{\degree} at \SI{0.05}{\M} salt concentration
-\cite{Jones1980}.  Thus, about 1000x higher CQ concentrations should
-be required to obtain the same effect.  At this lower affinity
-topoisomer separation in agarose gels are `less sensitive to
-variations in experimental conditions' \cite{Shure1977}.
+\cite{Jones1980}. At this lower affinity topoisomer separation in
+agarose gels `\textit{less sensitive to variations in experimental
+  conditions}' \cite{Shure1977}.  Additionally, intercalator effects
+on DNA supercoiling are potentially sequence dependent
+\cite{Vetcher2010}.
+%
+Together these factors likely explain the differences in
+concentrations required for full relaxation of SV40 by EtBr, pUC19 by
+CQ, and between the gel and reaction buffers in both implementations
+of Keller's band counting method.
 
 %The \dlk{} of circular DNA itself affected by the ionic conditions and
 %potentially DNA sequence \cite{Vetcher2010}
-
-
-\TODO{TBE has high ionic strength, required for gel electrophoresis,
-  keller used buffer recirculation}
-
-\TODO{EtBr:DNA dissociation constant, dependence on ionic strength}
-
-\TODO{Lower affinity (of CQ) is better for separation on gels \cite{Shure1977}}
-
-
-\TODO{binding constant EtBr:DNA is \SI{1e4}{\per\M} to
-  \SI{1e6}{\per\M}\footnote{https://www.ukessays.com/essays/chemistry/measuring-binding-constant-ethidium-bromide-etbr-9486.php},
-  ie. dissociation constant is \SIrange{1}{100}{\uM}}
-
-\TODO{here 0.5xTBE for gel and, the CutSmart buffer for the topoI
-  reactions}
-
-
-
-
 
 
 
@@ -681,13 +654,15 @@ variations in experimental conditions' \cite{Shure1977}.
 \end{figure}
 
    
-\paragraph{Gradual Plasmid Relaxation in Dark Phase, Quick Supercoiling in
-  Light.}  To clarify the unresolved issue whether DNA supercoiling is
-higher during the light or dark phases, we measured supercoiling
-levels of endogenous plasmids of \textit{Synechocystis sp.} PCC6803
-(Moscow strain) \raim{and \textit{Synechococcus elongatus} PCC 7942}
-during diurnal light/dark (12 h/12 h) conditions and a prolonged dark
-phase (12 h light, followed by 24 h dark).  A large sample volume
+\subsection{Gradual Plasmid Relaxation in Dark Phase, Quick Supercoiling in
+  Light.}
+
+To clarify the unresolved issue whether DNA supercoiling is higher
+during the light or dark phases, we measured supercoiling levels of
+endogenous plasmids of \textit{Synechocystis sp.} PCC6803 (Moscow
+strain) \raim{and \textit{Synechococcus elongatus} PCC 7942} during
+diurnal light/dark (12 h/12 h) conditions and a prolonged dark phase
+(12 h light, followed by 24 h dark).  A large sample volume
 (\SI{25}{\mL}) was required to obtain enough plasmids, and direct
 mixing of the sample with an equal volume of pre-cooled
 (\SI{-20}{\celsius}) pure undenatured ethanol was key to successful
@@ -772,8 +747,8 @@ harvested in exponential phase. The culture was centrifuged and pUC19
 was isolated with ZymoPURE's Plasmid Maxiprep Kit. The isolated
 plasmid was then purified (linear and open circular forms digested)
 via T5 exonuclease (NEB: M0363) reaction and the NucleoSpin Gel and
-PCR Clean-up kit (Machery-Nagel). The final plasmid DNA
-concentration was determined with the Nanodrop.
+PCR Clean-up kit (Machery-Nagel). The final plasmid DNA concentration
+was determined with the Nanodrop (Thermo Scientific NanoDrop 2000c).
 %
 \paragraph{pUC19 Relaxation Series.}
 The pUC19 plasmid extract was split and \SI{1}{\ug} samples were
@@ -815,18 +790,18 @@ supernatant was discarded after centrifugation for \SI{10}{\minute} at
 used according to manufacturer's instruction, except for additional
 enzymatic steps during lysis. The cell pellet was resuspended in
 \SI{250}{\micro\liter} Qiagen P1 solution and transferred to
-\SI{1.5}{\mL} reaction tubes. Then \SI{50}{\micro\liter} lysozyme 
+\SI{1.5}{\mL} reaction tubes. Then \SI{50}{\micro\liter} lysozyme
 solution (\SI{50}{\milli\gram\per\milli\liter}) was added, mixed, and
 incubated for \SI{1}{\hour} at \SI{37}{\celsius}.  After the addition
 of \SI{55}{\micro\liter} of \SI{20}{\percent} SDS and
 \SI{3}{\micro\liter} of proteinase K
 (\SI{20}{\milli\gram\per\milli\liter}), the reaction mixture was
 incubated at \SI{37}{\celsius} for \SI{16}{\hour}.  Starting with the
-alkaline lysis with the Qiagen P2 solution, all further steps
-(QIAprep Spin Miniprep Kit) were carried out with
-amounts that were adjusted to the initial volume. Next, the
-concentrations and quality (260/280, 230/280 ratio) was determined
-using the Nanodrop \todo{model} .  The PlasmidSafe enzyme mix (epicentre,
+alkaline lysis with the Qiagen P2 solution, all further steps (QIAprep
+Spin Miniprep Kit) were carried out with amounts that were adjusted to
+the initial volume. Next, the concentrations and quality (260/280,
+230/280 ratio) was determined using the Nanodrop (Thermo Scientific
+NanoDrop 2000c).  The PlasmidSafe enzyme mix (epicentre,
 cat. no. E3101K) was used for removal of linear DNA according to the
 manufacturer's protocol and incubated at \SI{37}{\celsius} for
 \SI{30}{\minute} and purified with QIAprep spin columns using 5
