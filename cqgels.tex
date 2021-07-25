@@ -349,36 +349,45 @@ positively and some negatively supercoiled \cite{Depew1975}.  These
 latter species are already more compact then the relaxed form and they
 form distinct bands ``below'' the \texttt{oc} band.
 
+
 To separate the \textit{in vivo} levels of supercoiling on agarose
 gels an intercalating substance can be added to the agarose gel and
-the gel buffer.  Intercalating substances reduce the helix rotation
-angle between the two bases they bind to, \ie{}, the locally unwind
-the helix. This absorbs some of the torsional strain of the underwound
-helix of negatively supercoiled DNA, and thus reduces the apparent
-level of supercoiling.  When adding the right amount of the
-intercalator, supercoiling is reduced to an extent which can be
-separated on the agarose gel.  A similar principle can be used to
-generate a series of plasmids, starting from the \textit{in vivo}
-level of supercoiling and all the way to the fully relaxed form. The
-intercalator is simply added to the reaction mix, supercoiled plasmids
-are partially relaxed and the NC enzyme can only remove the remaining
-level of DNA supercoiling.  After washing out the intercalator the
-formerly quenched supercoiling is re-introduced. 
+the gel buffer \cite{Keller1975b}.  Intercalating substances reduce
+the helix rotation angle between the two bases they bind to, \ie{},
+the locally unwind the helix \cite{Lerman1961}. This absorbs some of
+the torsional strain of the underwound helix of negatively supercoiled
+DNA, and thus reduces the apparent level of supercoiling.  When adding
+the right amount of the intercalator, supercoiling is reduced to an
+extent which can be separated on the agarose gel.  A similar principle
+can be used to generate a series of plasmids, starting from the
+\textit{in vivo} level of supercoiling and all the way to the fully
+relaxed form. The intercalator is simply added to the reaction mix,
+supercoiled plasmids are partially relaxed and the NC enzyme can only
+remove the remaining level of DNA supercoiling.  After washing out the
+intercalator the formerly quenched supercoiling is re-introduced.
 \citet{Keller1975b} developed an elegant method where different
 concentrations of the intercalator are used both, in the NC reaction
 mix and subsequently on agarose gels to separate topoisomers. Keller's
 band counting method allows to simply count all bands from the
 original untreated plasmid to the fully relaxed form across the series
-of gels, and thereby determine \dlkr{} of circular DNA
-isolated from cell cultures.
+of gels, and thereby determine \dlkr{} of circular DNA isolated from
+cell cultures.
 %
-Notably, the unwinding property of intercalators is not saturated at
-full DNA relaxation. Adding more will result in positively supercoiled
-plasmids. These are not affected by typical (ATP-independent) NC
-enzymes, which only relax negatively supercoiled plasmids. In
+Notably, the unwinding by the intercalator is not saturated at full
+DNA relaxation. Adding more intercalator will result in positively
+supercoiled plasmids \cite{Shure1977, Bowater1992}. These are not
+affected by typical (ATP-independent) NC enzymes, which only relax
+negatively supercoiled plasmids \cite{Wang1971, Kirkegaard1985}. In
 contrast, on agarose gels the DNA now changes its migration speed and
 positively supercoiled plasmids travel again faster than the relaxed
-form.
+form. \citet{Vetcher2010} recently suggested a model that can
+partially explain topoisomer mobility differences in agarose gels,
+based on the writhe component $Wr$ of \dlk{}.
+
+%\citet{Mitchenall2018} recently showed that topoisomer separation
+%is also possible with capillary gel electrophoresis.
+
+%\TODO{\cite{Shure1977, Bowater1992, Vetcher2010}}
 
 \citet{Woelfle2007} used \SI{10}{\ugml} of CQ in their
 agarose gel analysis. They state but do not show that they have tested
@@ -467,10 +476,10 @@ cycle of cyanobacteria remains unclear.
 
 \paragraph{Keller's Band Counting Method with Chloroquine and pUC19.}
 %
-\TODO{SV40 viral genome propagated in and isolated from African green monkey
-  cells (CV-1), where negative supercoiling is presumably induced by
-  nucleosomes ... in vitro relaxation with DNA-relaxing enzyme
-  purified from human tissue culture cells (KB-3)}
+\TODO{SV40 viral genome (\SI{5.2}{kb}) propagated in and isolated
+  from African green monkey cells (CV-1), where negative supercoiling
+  is presumably induced by nucleosomes ... in vitro relaxation with
+  DNA-relaxing enzyme purified from human tissue culture cells (KB-3)}
 %
 In Keller's protocol \cite{Keller1975b} the indicated EtBr
 concentrations in the topoI reaction ranged from
@@ -520,24 +529,47 @@ TBE), and \SIrange{1000}{3000}{\ugml} in the CutSmart reaction buffer
 %supercoiling of pUC19 in \textit{E. coli} was $\approx$1000x lower in
 %the gel buffer than in the reaction buffer.
 
-\paragraph{Discussion: CQ vs EtBr.}
-In summary, the intercalator concentration required to fully quench
-the original level of supercoiling of SV40 and pUC19 was $\approx$30x and
-$\approx$1000x higher in the reaction buffers than in the gels,
-respectively.
+Counting topoisomers across gels, our gels show that the untreated
+control has a $\dlkr=\numrange{-15}{-16}$. With \SI{2686}{bp} length,
+$\lkr\approx\numrange{256}{258}$, and thus $\sigma\approx0.06$, as expected
+for a plasmmid isolated from \textit{E. coli}.
 
-\TODO{sequence specificity, preference for AT}
+\paragraph{Discussion: CQ vs EtBr.}
+In summary, the intercalator concentrations required to fully quench
+the original level of supercoiling of SV40 and pUC19 were $\approx$30x
+and $\approx$1000x higher in the reaction buffers than in the gels,
+respectively. The CQ concentrations were \numrange{100}{1000}x higher
+than the EtBr concentrations in \citet{Keller1975b}.
+
+%\TODO{sequence specificity, preference for AT}
+%
+EtBr binds to DNA with relatively high affinity, \eg{}
+$K_a=\SI{1.5e5}{\per\Molar}$ in \SI{0.2}{\Molar} Na$^+$
+\cite{Gaugain1978}, and each intercalated molecule unwinds the helix
+by \SI{26}{\degree} \cite{Jones1980}. CQ has a lower affinity to DNA,
+depending on ionic strength of the buffer,
+$K_a=\SI{3.7e4}{\per\Molar}$ in a \SI{50}{\mM} phosphate buffer and
+$K_a=\SI{3.8e2}{\per\Molar}$ with \SI{0.1}{\Molar}
+NaCl \footnote{$K_d=\SIrange{27}{2600}{\uM}$}
+\cite{KwakyeBerko1989}. Its DNA unwinding angle is lower and, unlike
+EtBr also depends on the ionic strength of the buffer, with a maximum
+of \SI{17}{\degree} at \SI{0.05}{\M} salt concentration
+\cite{Jones1980}.  Thus, about 1000x higher CQ concentrations should
+be required to obtain the same effect.  At this lower affinity
+topoisomer separation in agarose gels are `less sensitive to
+variations in experimental conditions' \cite{Shure1977}.
+
+%The \dlk{} of circular DNA itself affected by the ionic conditions and
+%potentially DNA sequence \cite{Vetcher2010}
 
 
 \TODO{TBE has high ionic strength, required for gel electrophoresis,
-keller used buffer recirculation}
+  keller used buffer recirculation}
+
 \TODO{EtBr:DNA dissociation constant, dependence on ionic strength}
-\TODO{more or less undwinding angle and lower or higher dissociation
-  constant with ionic strength?\\ The unwinding angle for chloroquine
-  increases with ionic strength \cite{Jones1980}, while it is
-  independent for EtBr. The CQ:DNA dissociation constant, varied from
-  \SIrange{27}{2600}{\uM}, depending on the ionic strength of the
-  buffer \cite{KwakyeBerko1989}.}
+
+\TODO{Lower affinity (of CQ) is better for separation on gels \cite{Shure1977}}
+
 
 \TODO{binding constant EtBr:DNA is \SI{1e4}{\per\M} to
   \SI{1e6}{\per\M}\footnote{https://www.ukessays.com/essays/chemistry/measuring-binding-constant-ethidium-bromide-etbr-9486.php},
