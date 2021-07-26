@@ -490,7 +490,8 @@ $\cqgel=\SI{0.06}{\ugml}$, or with \SI{394.3}{\gram\per\mol},
 $\cqgel=\SI{0.15}{\uM}$\footnote{0.06/394.3 = 0.00015 umol/ml= mMol =
   0.15 uM}. In the topo I reaction $\cqtop\approx\SI{4.5}{\uM}$ (lane
 9 in Figures 1 and 3 of \cite{Keller1975b}) were required to fully
-relax the DNA.
+relax the DNA. The \textit{in vivo} supercoiling level of the SV40
+DNA was $\dlkr\approx24$ and $\sigma\approx0.05$.
 
 Here, we propagated the pUC19 vector plasmid (\SI{2686}{bp}) in in
 \textit{Escherichia coli} and harvested plasmid in exponential phase
@@ -540,21 +541,21 @@ than the EtBr concentrations in \citet{Keller1975b}.
 EtBr binds to DNA with relatively high affinity, \eg{}
 $K_a=\SI{1.5e5}{\per\Molar}$ in \SI{0.2}{\Molar} Na$^+$
 \cite{Gaugain1978}, and each intercalated molecule unwinds the helix
-by \SI{26}{\degree} \cite{Jones1980}. CQ has a lower affinity to DNA,
-depending on ionic strength of the buffer, \eg{}
-$K_a=\SI{3.7e4}{\per\Molar}$ in a \SI{50}{\mM} phosphate buffer and
-$K_a=\SI{3.8e2}{\per\Molar}$ with \SI{0.1}{\Molar} NaCl
-\cite{KwakyeBerko1989}. CQ's DNA unwinding angle is lower and, unlike
-EtBr, also depends on the ionic strength of the buffer with a maximum
-of \SI{17}{\degree} at \SI{0.05}{\M} salt concentration
-\cite{Jones1980}. 
-Additionally, intercalator effects on DNA supercoiling are potentially
-sequence dependent \cite{Vetcher2010} \TODO{CITE}.
+by \SIrange{26}{28}{\degree} \cite{Keller1975b}. CQ has a
+lower affinity to DNA, depending on ionic strength of the buffer,
+\eg{} $K_a=\SI{3.7e4}{\per\Molar}$ in a \SI{50}{\mM} phosphate buffer
+and $K_a=\SI{3.8e2}{\per\Molar}$ with \SI{0.1}{\Molar} NaCl
+\cite{KwakyeBerko1989}. The DNA unwinding angle induced by CQ is lower
+and, unlike EtBr, also depends on the ionic strength of the buffer,
+with a maximum of \SI{17}{\degree} at \SI{0.05}{\M} salt concentration
+\cite{Jones1980}.  Additionally, intercalator effects on DNA
+supercoiling as well as supercoiling-dependent conformations
+of circular DNA could be sequence dependent \cite{Vetcher2010}.
 %
 Together these factors likely explain the differences in
-concentrations required for full relaxation of SV40 by EtBr, pUC19 by
-CQ, and between the gel and reaction buffers in both implementations
-of Keller's band counting method.
+concentrations required for full relaxation of SV40 by EtBr, of pUC19
+by CQ, and between the gel and reaction buffers in both
+implementations of Keller's band counting method.
 
 %The \dlk{} of circular DNA itself affected by the ionic conditions and
 %potentially DNA sequence \cite{Vetcher2010}
@@ -579,22 +580,27 @@ of Keller's band counting method.
  \textbf{A}\hspace{.48\textwidth}\textbf{C}
  \vspace{.2cm}
 
-  \caption{\textbf{Chloroquine Gel Analysis: Calibration \& Diurnal
-      Supercoiling}. \textbf{A:} Southern blots with a probe for the
-    pCA2.4\_M plasmid (Table \ref{tab:blot}) of agarose gels with with
-    \SI{1}{\ugml} (A, top) or \SI{20}{\ugml} (A, bottom) CQ
-    phosphate. The samples were extracted from a diurnal growth
-    experiments. The central lane in the bottom panel is a pooled
-    plasmid sample after treatment with the NcoI restriction enzyme
-    which cuts only the pCA2.4\_M plasmid (one cut site) but not the
-    similarly sized pCB2.4\_M. \TODO{\textbf{B:} $\dlk_\text{ref}=-8.24$.}
-    \textbf{C:} Diurnal time-series of the average linking number
-    deficits ($\Delta \overline{Lk}$) of the pCA2.4\_M plasmids,
-    calculated from three replicates of agarose gels with
-    \SI{20}{\ugml} (A, top) and the single replicate of the gel with
-    \SI{1}{\ugml} (A, bottom).  The dotted thin lines are values from
-    the 4 different gels and the thick lines are their means and
-    standard deviations.  Gray background indicates the dark
+  \caption{\textbf{Diurnal Plasmid Supercoiling in
+      \scyst{}}. \textbf{A:} Southern blots with a probe for the
+    pCA2.4\_M plasmid of \SI{1.2}{\percent} agarose gels supplemented
+    with \SI{1}{\ugml} (A, top) or \SI{20}{\ugml} (A, bottom) CQ. The
+    samples were extracted from diurnal growth experiments, left lanes
+    from light/dark/light conditions and right lanes with a prolonged
+    dark phase (light/dark/dark). The central lane in the bottom panel
+    shows a pooled plasmid sample after treatment with the NcoI
+    restriction enzyme which cuts only the pCA2.4\_M plasmid (one cut
+    site) but not the similarly sized pCB2.4\_M. \textbf{B:} Example
+    electropherogram of a single lane of topoisomers, extraced with
+    ImageJ from a gel image and analyzed using peak detection routines
+    to subtract a baseline (top, blue and green lines)) and calculate
+    a mean linking number from topoisomer peak areas (bottom,
+    $\dlk_\text{ref}=-8.24$).  \textbf{C:} Diurnal time-series of the
+    average linking number deficits ($\Delta \overline{Lk}$) of the
+    pCA2.4\_M plasmids, calculated from three replicates of agarose
+    gels with \SI{20}{\ugml} (A, top) and the single replicate of the
+    gel with \SI{1}{\ugml} (A, bottom).  The dotted thin lines are
+    values from the 4 different gels and the thick lines are their
+    means and standard deviations.  Gray background indicates the dark
     phases. One culture (blue line, light/dark/dark) did not receive
     the final 12 h of light and remained in the dark.  Note, that
     lower values indicate more \textbf{negative} supercoiling (higher
@@ -626,7 +632,7 @@ two at 2.4 kb \cite{Yang1993b, Yang1994} and one at 5.2 kb
 \cite{Xu1997b} . Restriction analysis and Southern blots confirmed
 that the most pronounced topoisomer bands were obtained for plasmid
 pCA2.4\_M (Fig. \ref{fig:diurnalcq}C \& D).
-
+%
 The migration distances on the gels were different between samples and
 the relative differences reversed between the two CQ
 concentrations. This change of relative migration speed indicates that
@@ -688,20 +694,22 @@ would allow to use less runs with intercalator concentrations to
 achieve full separation of \textit{in vivo} levels of supercoiling.
 However, the intercalator type and concentration can not be
 manipulated on this system. We recently succeeded to separate pUC19
-topoisomers (XYZ ng/uL) by adding comparatively large concentrations
-of CQ ($\cqgel=\SIrange{1}{3}{\milli\gram\per\liter}$) to the
-commercial (and secret) gel delivered for the AATI Fragment Analyzer
-(now owned by Agilent). But the results were not consistent between
-runs. More work and alternatives to the existing commercial systems is
-required to establish topoisomer separation by capillary gel
-electrophoresis as a standard procedure.
+topoisomers by adding comparatively large concentrations of CQ
+($\cqgel=\SIrange{1}{3}{\milli\gram\per\liter}$) to the commercial
+(and secret) gel delivered for the AATI Fragment Analyzer (now owned
+by Agilent). But the results were not consistent between runs. Likely,
+the undisclosed fluorescent nucleic acid marker has effects on DNA
+supercoiling. More work and alternatives to the existing commercial
+systems is required to establish topoisomer separation by capillary
+gel electrophoresis as a standard procedure. This could potentially
+greatly reduce the amount of sample required per run.
 
 The analysis of electropherograms is also a limiting factor for many
 laboratories. No standards or established tools exist on how to
 calculate average linking number differences between
 samples. Commerical gel image analysis software is not geared towards
 this application. To this end \citet{Ziraldo2019} provide a plug-in
-for the ImageJ image analysis software that should streamline the
+for the ImageJ image analysis software that could streamline the
 analysis of agarose gels. Here, we also used ImageJ to extract
 electropherograms from gel images, and peak detection routines from a
 mass-spectrometry R package, \texttt{msProcess} (see Methods) which is
@@ -710,7 +718,7 @@ novel R package, \texttt{bioanalyzeR}
 (\url{https://github.com/jwfoley/bioanalyzeR}), allows to parse
 electropherograms from data files exported by Agilent capillary
 electrophoresis platforms (Bioanalyzer, TapeStation).
-
+%
 And finally, \citet{Vetcher2010} recently suggested a model that can
 partially explain topoisomer mobility differences in agarose gels,
 based on the writhe component $Wr$ of \dlk{}. Implementing such
@@ -848,7 +856,7 @@ buffer for \SIrange{3}{24}{\hour} and imaged on a BioRad Imaging
 System (ChemiDoc MP). Washing and staining were also performed
 light-protected.
 
-\paragraph{Soutern Blots of Agarose Gels.}
+\paragraph{Southern Blots of Agarose Gels.}
 
 Probes for Southern blots were generated by colony PCR using the
 primers in Table \ref{tab:blot} (PCR programm: 3 min,
@@ -859,7 +867,7 @@ NucleoSpin Extract II kit (Macherey-Nagel).  Labelled DNA was
 generated using the same PCR program with the DIG Easy Hyb (Roche, 1603558)
 mix, according to manufacturer's instruction.
 %
-Soutern blots were generated using the CDP-Star kit with slight
+Southern blots were generated using the CDP-Star kit with slight
 modifications as follows.  Gels were blotted onto a nitrocellulose
 membrane using a vacuum blotter \todo{model?} (\SI{90}{\min} with
 \SIrange{5}{7}{mm Hg}, in 10x SSC buffer). The membrane was
