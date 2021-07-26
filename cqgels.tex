@@ -315,7 +315,7 @@ Topoisomers are identical plasmid molecules (isomers) that differ only
 by their level of negative DNA supercoiling, quantified as the
 plasmid's linking number (\lk{}) \cite{Crick1976}. The terminology is
 from the mathematical field of topology, and \lk{} is the number of
-crossings of the two helix strands aroud each other.  In relaxed
+crossings of the two helix strands around each other.  In relaxed
 (non-supercoiled) DNA the double helix adopts its minimal free energy
 structure with \SIrange{10.4}{10.5}{bp} per helix turn, \eg{} a
 circular DNA with \SI{1000}{bp} has $\lkr=\numrange{95}{96}$. Since
@@ -353,10 +353,10 @@ form distinct bands ``below'' the \texttt{oc} band.
 
 To separate the \textit{in vivo} levels of supercoiling on agarose
 gels an intercalating substance can be added to the agarose gel and
-the gel buffer \cite{Keller1975b}.  Intercalating substances reduce
-the helix rotation angle between the two bases they bind to, \ie{},
-the locally unwind the helix \cite{Lerman1961}. This absorbs some of
-the torsional strain of the underwound helix of negatively supercoiled
+the gel buffer.  Intercalating substances reduce the helix rotation
+angle between the two bases they bind to, \ie{}, they locally unwind
+the helix \cite{Lerman1961, Pritchard1966}. This absorbs some of the
+torsional strain of the underwound helix of negatively supercoiled
 DNA, and thus reduces the apparent level of supercoiling.  When adding
 the right amount of the intercalator, supercoiling is reduced to an
 extent which can be separated on the agarose gel.  A similar principle
@@ -381,9 +381,11 @@ affected by typical (ATP-independent) NC enzymes, which only relax
 negatively supercoiled plasmids \cite{Wang1971, Kirkegaard1985}. In
 contrast, on agarose gels the DNA now changes its migration speed and
 positively supercoiled plasmids travel again faster than the relaxed
-form. \citet{Vetcher2010} recently suggested a model that can
-partially explain topoisomer mobility differences in agarose gels,
-based on the writhe component $Wr$ of \dlk{}.
+form. \citet{Shure1977} suggested that with intercalators with lower
+affinity the topoisomer separation in agarose gels `\textit{less
+  sensitive to variations in experimental conditions}' and first
+introduced the use of chloroquine (CQ) instead of EtBr.
+
 
 \citet{Woelfle2007} used \SI{10}{\ugml} of CQ in their
 agarose gel analysis. They state but do not show that they have tested
@@ -490,12 +492,19 @@ $\cqgel=\SI{0.15}{\uM}$\footnote{0.06/394.3 = 0.00015 umol/ml= mMol =
 9 in Figures 1 and 3 of \cite{Keller1975b}) were required to fully
 relax the DNA.
 
-\TODO{We ...pUC19 propagated in E.coli, topo I in CutSmart reaction
-  buffer}
-
+Here, we propagated the pUC19 vector plasmid (\SI{2686}{bp}) in in
+\textit{Escherichia coli} and harvested plasmid in exponential phase
+on LB medium. A plasmid relaxation series was performed with the
+bacterial NC enzyme topoisomerase I (topo I) from New England Biolabs
+and in their CutSmart reaction buffer (see Methods). To find the
+appropriate chloroquine concentrations to reproduce Keller's band
+counting method, we first analyzed the EtBr concentrations used in the
+original publication, considered the ca. 1000x lower binding affinity
+of CQ, and adjusted concentrations from there.
+%
 Figure \ref{fig:keller} shows that the lowest CQ concentrations in the
 gel ($\cqgel=\SI{1}{\ugml}$) was sufficient to detect a clear change
-in the migration of the pUC19 topoisomers. Fully relaxed plasmids
+in the migration of all pUC19 topoisomers. Fully relaxed plasmids
 ($\cqtop=\SIrange{0}{200}{\ugml}$) had already shifted to positive
 supercoiling and migrated faster than without CQ.  Topoisomers treated
 with $\cqtop=\SIrange{800}{1000}{\ugml}$ were all close to full
@@ -506,7 +515,7 @@ topoisomers relaxed at the highest concentration
 ($\cqtop=\SI{3000}{\ugml}$) appeared with band patterns almost
 identical to the untreated control in all gels.  With a molecular
 weight of \SI{515.86}{\gram\per\mol} (chloroquine diphosphate),
-relaxing concentrations were
+fully relaxing concentrations of CQ were thus
 $\cqgel\sim\SI{3.9}{\uM}$\footnote{2/515.86=0.0039 umol/ml = mMol =
   3.9 uMol} and $\cqtop\sim\SI{5.8}{\mM}$\footnote{3000/515.86 = 5.8
   umol/ml = 5.8 mMol}.
@@ -532,18 +541,15 @@ EtBr binds to DNA with relatively high affinity, \eg{}
 $K_a=\SI{1.5e5}{\per\Molar}$ in \SI{0.2}{\Molar} Na$^+$
 \cite{Gaugain1978}, and each intercalated molecule unwinds the helix
 by \SI{26}{\degree} \cite{Jones1980}. CQ has a lower affinity to DNA,
-depending on ionic strength of the buffer,
+depending on ionic strength of the buffer, \eg{}
 $K_a=\SI{3.7e4}{\per\Molar}$ in a \SI{50}{\mM} phosphate buffer and
-$K_a=\SI{3.8e2}{\per\Molar}$ with \SI{0.1}{\Molar}
-NaCl \footnote{$K_d=\SIrange{27}{2600}{\uM}$}
-\cite{KwakyeBerko1989}. Its DNA unwinding angle is lower and, unlike
-EtBr also depends on the ionic strength of the buffer, with a maximum
+$K_a=\SI{3.8e2}{\per\Molar}$ with \SI{0.1}{\Molar} NaCl
+\cite{KwakyeBerko1989}. CQ's DNA unwinding angle is lower and, unlike
+EtBr, also depends on the ionic strength of the buffer with a maximum
 of \SI{17}{\degree} at \SI{0.05}{\M} salt concentration
-\cite{Jones1980}. At this lower affinity of the intercalator
-topoisomer separation in agarose gels `\textit{less sensitive to
-  variations in experimental conditions}' \cite{Shure1977}.
+\cite{Jones1980}. 
 Additionally, intercalator effects on DNA supercoiling are potentially
-sequence dependent \cite{Vetcher2010}.
+sequence dependent \cite{Vetcher2010} \TODO{CITE}.
 %
 Together these factors likely explain the differences in
 concentrations required for full relaxation of SV40 by EtBr, pUC19 by
@@ -672,42 +678,48 @@ were only $\Delta \Delta \overline{Lk} \approx 1$, and $\Delta \Delta
   method, however, material and time limiting;
 }
 
-\raim{ \citet{Mitchenall2018} reported separation of topoisomers of
-  pBR322, pUC19, and a 339 bp DNA minicircle on a commercial capillary
-  gel electrophoresis platform (Qiagen QIAxcel Advance System), where
-  EtBr is part of the gel delivered in a cartridge. The system is
-  quite sensitive and samples of \SI{100}{\ng} DNA sufficed. Moreover,
-  the range of separated topoisomers was broader than on agarose
-  gels. This would allow to use less runs with intercalator
-  concentrations to achieve full separation of \textit{in vivo} levels
-  of supercoiling.  However, the intercalator type and concentration
-  can not be manipulated on this system. We recently succeeded to
-  separate pUC19 topoisomers (XYZ ng/uL) by adding comparatively large
-  concentrations of CQ
-  ($\cqgel=\SIrange{1}{3}{\milli\gram\per\liter}$) to the commercial
-  (and secret) gel delivered for the AATI Fragment Analyzer (now owned
-  by Agilent). But the results were not consistent between runs. More
-  work and alternatives to the existing commercial systems is required
-  to establish topoisomer separation by capillary gel electrophoresis
-  as a standard procedure.  And finally, the analysis of
-  electropherograms is also a limiting factor. No standards or
-  established tools exist on how to calculate average linking number
-  differences between samples. To this end \citet{Ziraldo2019} provide
-  a plug-in for the ImageJ image analysis software that should
-  streamline the analysis of agarose gels. Here, we also used ImageJ
-  to extract electropherograms from gel images, and peak detection
-  routines from a mass-spectrometry R package, \texttt{msProcess} (see
-  Methods) which is not maintained anymore, to calculate average
-  linking numbers in R. A novel package, \texttt{bioanalyzeR}
-  (\url{https://github.com/jwfoley/bioanalyzeR}), allows to parse
-  electropherograms from data files exported by Agilent capillary
-  electrophoresis platforms (Bioanalyzer, TapeStation). Automated
-  analysis tools for both gel images and capillary electrophoresis
-  platforms could open this old and elegant method for modern
-  molecular biology laboratories.
-  
-  
-}
+\citet{Mitchenall2018} reported separation of topoisomers of pBR322,
+pUC19, and a 339 bp DNA minicircle on a commercial capillary gel
+electrophoresis platform (Qiagen QIAxcel Advance System), where EtBr
+is part of the gel delivered in a cartridge. The system is quite
+sensitive and samples of \SI{100}{\ng} DNA sufficed. Moreover, the
+range of separated topoisomers was broader than on agarose gels. This
+would allow to use less runs with intercalator concentrations to
+achieve full separation of \textit{in vivo} levels of supercoiling.
+However, the intercalator type and concentration can not be
+manipulated on this system. We recently succeeded to separate pUC19
+topoisomers (XYZ ng/uL) by adding comparatively large concentrations
+of CQ ($\cqgel=\SIrange{1}{3}{\milli\gram\per\liter}$) to the
+commercial (and secret) gel delivered for the AATI Fragment Analyzer
+(now owned by Agilent). But the results were not consistent between
+runs. More work and alternatives to the existing commercial systems is
+required to establish topoisomer separation by capillary gel
+electrophoresis as a standard procedure.
+
+The analysis of electropherograms is also a limiting factor for many
+laboratories. No standards or established tools exist on how to
+calculate average linking number differences between
+samples. Commerical gel image analysis software is not geared towards
+this application. To this end \citet{Ziraldo2019} provide a plug-in
+for the ImageJ image analysis software that should streamline the
+analysis of agarose gels. Here, we also used ImageJ to extract
+electropherograms from gel images, and peak detection routines from a
+mass-spectrometry R package, \texttt{msProcess} (see Methods) which is
+not maintained anymore, to calculate average linking numbers in R. A
+novel R package, \texttt{bioanalyzeR}
+(\url{https://github.com/jwfoley/bioanalyzeR}), allows to parse
+electropherograms from data files exported by Agilent capillary
+electrophoresis platforms (Bioanalyzer, TapeStation).
+
+And finally, \citet{Vetcher2010} recently suggested a model that can
+partially explain topoisomer mobility differences in agarose gels,
+based on the writhe component $Wr$ of \dlk{}. Implementing such
+theories in analysis tools could further support automatization.
+Standardized and automated analysis tools for both, gel images and
+capillary electrophoresis platforms could open this old and elegant
+method for modern molecular biology laboratories.
+
+
 
 \section*{Data Availability}
 All gel images and electropherogramms are available on request. Our
