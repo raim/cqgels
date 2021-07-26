@@ -113,7 +113,7 @@
 \definecolor{lgold}{RGB}{255, 215, 10}
 
 % MAKROS
-\newcommand{\scyst}{\textit{Synechocystis} PCC6803}
+\newcommand{\scyst}{\textit{Synechocystis}}
 \newcommand{\scst}{\textit{Synechocystis}}
 
 \newcommand{\gene}[1]{\ensuremath{\textit{#1}}}
@@ -134,7 +134,7 @@
 \newcommand{\cox}{\ensuremath{\text{CO$_2$}}}
 
 \newcommand{\cqgel}{\ensuremath{C_{\text{gel}}}}
-\newcommand{\cqtop}{\ensuremath{C_{\text{topoI}}}}
+\newcommand{\cqtop}{\ensuremath{C_{\text{relax}}}}
 \newcommand{\lk}{\ensuremath{\text{Lk}}}
 \newcommand{\lkr}{\ensuremath{\text{Lk}_0}}
 \newcommand{\dlk}{\ensuremath{\Delta\text{Lk}}}
@@ -202,25 +202,26 @@ during prolonged dark phases in \textit{Synechococcus elongatus} PCC
 supercoiling are commonly associated with exponential growth and high
 metabolic flux. Vijayan \textit{et al.} (2009, PNAS) then have
 silently reverted the interpretation of plasmid mobility on agarose
-gels supplemented with chloroquine (CQ), but not further discussed the
-differences.
+gels supplemented with chloroquine diphosphate (CQ), but not further
+discussed the differences.
 %
 Here, we set out to clarify this open issue in cyanobacterial DNA
 supercoiling dynamics. We first re-capitulate Keller's band counting
 method (1975, PNAS) using CQ instead of ethidium bromide as the
 intercalating agent.  A 500x--1000x higher CQ concentration is
-required in the topoisomerase I reaction than in the agarose gel
-buffer to quench all negative supercoiling of pUC19 extracted from
-\textit{Escherichia coli}. This is likely due to the dependence of
-both, the DNA binding affinity of CQ and the induced DNA unwinding
-angle, on the ionic strength of the buffer. Lower levels of CQ were
-required to fully relax \textit{in vivo} pUC19 supercoiling than were
-used by \citet{Woelfle2007}. Next, we analyzed the \textit{in vivo}
-supercoiling of endogenous plasmids of \raim{\textit{Synechococcus
-  elongatus} and} \textit{Synechocystis sp.} PCC 6803, at two different
-CQ concentrations.  This clearly indicated that negative supercoiling
-of plasmids does not increase but decreases in the dark phase, and
-progressively decreases further in prolonged darkness.
+required in the DNA relaxation reaction (topoisomerase I) than in the
+agarose gel buffer to quench all negative supercoiling of pUC19
+extracted from \textit{Escherichia coli}. This is likely due to the
+dependence of both, the DNA binding affinity of CQ and the induced DNA
+unwinding angle, on the ionic strength of the buffer. Lower levels of
+CQ were required to fully relax \textit{in vivo} pUC19 supercoiling
+than were used by \citet{Woelfle2007}. Next, we analyzed the
+\textit{in vivo} supercoiling of endogenous plasmids of
+\remove{\textit{Synechococcus elongatus} and} \textit{Synechocystis sp.}
+PCC 6803, at two different CQ concentrations.  This clearly indicated
+that negative supercoiling of plasmids does not increase but decreases
+in the dark phase, and progressively decreases further in prolonged
+darkness.
 
 % now start line numbers
 \linenumbers
@@ -230,10 +231,14 @@ progressively decreases further in prolonged darkness.
 \textit{In vivo}, the DNA double helix usually exists in a torsionally
 strained state, often just denoted as negative DNA supercoiling.  The
 energy stored in underwound DNA can be channeled locally at gene
-promoters to open and ``read'' DNA in transcription and replication.
-In Bacteria, the level of DNA supercoiling is homeostatically controlled by
-enzymes but also depends on the transcription and replication, and
-in turn influences the transcription rates of many genes \cite{Dorman2019}. 
+promoters to open and ``read'' DNA in transcription and replication
+\cite{Dorman2019}.  In Bacteria, the level of DNA supercoiling is
+homeostatically controlled by enzymes but also depends on the
+transcription and replication, and in turn influences the
+transcription rates of many genes.  In most analyzed bacteria and
+conditions, increased negative supercoiling is observed during
+exponential growth and decreased during stationary phase or upon
+exposure to stress.
 %
 %The genome-wide levels of DNA supercoiling are difficult to measure,
 %and often endogenous or transfected plasmids are used as a proxy
@@ -264,52 +269,58 @@ in turn influences the transcription rates of many genes \cite{Dorman2019}.
 %linking number) in the supercoiled plasmid and the relaxed form, where
 %the helix has about \SIrange{10.4}{10.5}{bp} per helix turn.
 %
+The DNA supercoiling level of the circular chloroplast genome of the
+single-celled algae \textit{Chlamydomonas reinhardtii} showed
+fluctuations with the diurnal light/dark cycle \cite{Salvador1998}.
 \citet{Mori2001} first suggested that supercoiling could underlie the
 regulation of hundreds of genes during the light/dark (diurnal) cycle
-in cyanobacteria. Indeed, genome compaction varied
-over the diurnal cycle in \textit{Synechococcus elongatus} PCC 7942
-\cite{Smith2006}. \citet{Woelfle2007} then used an old
-method, separation of plasmid topoisomers by chloroquine-supplemented
-agarose gel electrophoresis, to show that the supercoiling level of
-its endogenous plasmid varies over the light/dark cycle, and variation
+in cyanobacteria, the bacterial ancestors of chloroplasts. Indeed,
+genome compaction varied over the diurnal cycle in
+\textit{Synechococcus elongatus} PCC 7942
+\cite{Smith2006}. \citet{Woelfle2007} then used an old method,
+separation of plasmid topoisomers by chloroquine-supplemented agarose
+gel electrophoresis, to show that the supercoiling level of its
+endogenous plasmid varies over the light/dark cycle, and variation
 continued in constant light after entrainment to light/dark
 cycles. The latter observation is considered a hallmark of the
 presence of a circadian clock.  Specifically, they noted a drop in
-plasmid supercoiling already \SI{20}{\minute} after the transition to
-light, as well as continuous increase in DNA supercoiling in prolonged
-\SI{72}{\hour} darkness. However, a comparison with a later paper
-using the same method \cite{Vijayan2009} shows discrepancies in the
-interpretation of the agarose gels, specifically the relative
-mobilities of more and less supercoiled plasmid samples.
+negative supercoiling of the plasmid already \SI{20}{\minute} after
+the transition to light, as well as continuous increase in DNA
+supercoiling in prolonged \SI{72}{\hour} darkness. However, a
+comparison with a later paper using the same method \cite{Vijayan2009}
+shows discrepancies in the interpretation of the agarose gels,
+specifically the relative mobilities of more and less supercoiled
+plasmid samples.
 %
 We first review the principles of agarose gel electrophoresis of
 plasmids in the presence of DNA intercalators.  To establish the
-effect of CQ on plasmids, we recapitulated Keller's band counting
-method but using CQ instead of ethidium bromide (EtBr) as the
+effect of chloroquine (CQ) on plasmids, we recapitulated Keller's band
+counting method but using CQ instead of ethidium bromide (EtBr) as the
 intercalating agent, and the pUC19 plasmid isolated from
-\textit{E. coli} culture. Applying different CQ concentrations to a
-small endogenous plasmid from \scyst{} shows that negative
-supercoiling increased (lower $\dlk$) quickly upon the onset of the
-light phase and progressivly decreased (higher $\dlk$) during a
-prolonged $\SI{48}{\hour}$ dark phase.
-
-
+\textit{Escherichia coli} (\textit{E. coli}) culture in exponential
+growth. Next, we extracted endogenous plasmids from the cyanobacterium
+\textit{Synechocystis sp.}  PCC 6803 (\scyst{}) grown under light/dark
+conditions (\SI{12}{\hour}/\SI{12}{\hour}). Using different CQ
+concentrations, we show that, opposite to the interpration by
+\citet{Woelfle2007}, negative supercoiling increased (lower $\dlk$)
+quickly upon the onset of the light phase and progressivly decreased
+(higher $\dlk$) during a prolonged $\SI{48}{\hour}$ dark phase.
 
 \section{Results and Discussion}
 
-\subsection{CQ Gels and Discrepancies between Woelfle \etal{} and Vijyan \etal{}.}
+\subsection{A Short History of Topoisomer Separation}
 
-This method to measure plasmid supercoiling is the subject of this
-contribution and requires some background.  Textbook plasmid agarose
-gels show three distinct bands: the ``linear'' form which underwent a
-double strand break, likely during extraction; and the \texttt{oc }
-(open circular) band, which has only one or more single strand breaks
-and thus is still circular. The latter travels slowest on the gel. And
-thirdly, intact plasmids travel fastest as a smeared band, widely
-known as the \texttt{ccc} band, for the covalently closed circular
-form of the plasmid. The band is smeared since it actually contains
-several distinct species, denoted topoisomers, that travel at slightly
-different speeds in the gel.
+The method to measure plasmid supercoiling by agarose gels is the
+subject of this contribution and requires some background.  Textbook
+plasmid agarose gels show three distinct bands: the ``linear'' form
+which underwent a double strand break, likely during extraction; and
+the \texttt{oc } (open circular) band, which has only one or more
+single strand breaks and thus is still circular. The latter travels
+slowest on the gel. And thirdly, intact plasmids travel fastest as a
+smeared band, widely known as the \texttt{ccc} band, for the
+covalently closed circular form of the plasmid. The band is smeared
+since it actually contains several distinct species, denoted
+topoisomers, that travel at slightly different speeds in the gel.
 %
 Topoisomers are identical plasmid molecules (isomers) that differ only
 by their level of negative DNA supercoiling, quantified as the
@@ -339,13 +350,13 @@ doubly coiled structure: the DNA double helix forms a higher order
 the polymeric meshwork of an agarose gel.
 %
 If plasmids are artificially relaxed with a nicking-closing enzyme
-(NC), such as bacterial topoisomerase I, they are still \texttt{ccc} but
-now migrate at a speed similar to the \texttt{oc} form. NC enzymes
-introduce a single strand break. The torsional strain in the
-supercoiled helix leads to rotation of the single stranded ends. The
-enzyme then ligates (closes) the ends again and releases a plasmid
-with less supercoiling. This relaxation will result in a Boltzmann
-distribution of plasmids around $\dlkr=0$, with some 
+(NC), such as bacterial topoisomerase I (TopoI), they are still
+\texttt{ccc} but now migrate at a speed similar to the \texttt{oc}
+form. NC enzymes introduce a single strand break (nick). The torsional
+strain in the supercoiled helix leads to rotation of the single
+stranded ends. The enzyme then ligates (closes) the ends again and
+releases a plasmid with less supercoiling. These reactions will result
+in a Boltzmann distribution of plasmids around $\dlkr=0$, with some
 positively and some negatively supercoiled \cite{Depew1975}.  These
 latter species are already more compact then the relaxed form and they
 form distinct bands ``below'' the \texttt{oc} band.
@@ -360,21 +371,21 @@ torsional strain of the underwound helix of negatively supercoiled
 DNA, and thus reduces the apparent level of supercoiling.  When adding
 the right amount of the intercalator, supercoiling is reduced to an
 extent which can be separated on the agarose gel.  A similar principle
-can be used to generate a series of plasmids, starting from the
-\textit{in vivo} level of supercoiling and all the way to the fully
-relaxed form. The intercalator is simply added to the reaction mix,
-supercoiled plasmids are partially relaxed and the NC enzyme can only
-remove the remaining level of DNA supercoiling.  After washing out the
-intercalator the formerly quenched supercoiling is re-introduced.
-\citet{Keller1975b} developed an elegant method where different
-concentrations of the intercalator are used both, in the NC reaction
-mix and subsequently on agarose gels to separate topoisomers. Keller's
-band counting method allows to simply count all bands from the
-original untreated plasmid to the fully relaxed form across the series
-of gels, and thereby determine \dlkr{} of circular DNA isolated from
-cell cultures.
+can be used to generate a series of plasmid topoisomers, starting from
+the \textit{in vivo} level of supercoiling and all the way to the
+fully relaxed form. The intercalator is simply added to the reaction
+mix, supercoiled plasmids are partially relaxed and the NC enzyme can
+only remove the remaining level of DNA supercoiling.  After washing
+out the intercalator the formerly quenched supercoiling is
+re-introduced.  \citet{Keller1975b} developed an elegant method where
+different concentrations of the intercalator EtBr are used both in the
+NC reaction mix and subsequently on agarose gels to separate
+topoisomers. Keller's band counting method allows to simply count all
+bands from the original untreated plasmid to the fully relaxed form
+across the series of gels, and thereby determine \dlkr{} of circular
+DNA isolated from cell cultures.
 %
-Notably, the unwinding by the intercalator is not saturated at full
+Importantly, the unwinding by the intercalator is not saturated at full
 DNA relaxation. Adding more intercalator will result in positively
 supercoiled plasmids \cite{Shure1977, Bowater1992}. These are not
 affected by typical (ATP-independent) NC enzymes, which only relax
@@ -384,8 +395,10 @@ positively supercoiled plasmids travel again faster than the relaxed
 form. \citet{Shure1977} suggested that with intercalators with lower
 affinity the topoisomer separation in agarose gels `\textit{less
   sensitive to variations in experimental conditions}' and first
-introduced the use of chloroquine (CQ) instead of EtBr.
+introduced the use of chloroquine (CQ, all amounts refer to
+chloroquine diphosphate) instead of EtBr.
 
+\subsection{Diurnal Plasmid Supercoiling in Cyanobacteria}
 
 \citet{Woelfle2007} used \SI{10}{\ugml} of CQ in their
 agarose gel analysis. They state but do not show that they have tested
@@ -405,10 +418,10 @@ where ``Rel'' denotes the migration distance of the upper (slowest
 migrating) band, actually the still present \texttt{oc} form.
 A lower, fastest migrating band that also appeared in all samples
 is denoted as ``SC''. However, it is unclear what this band actually
-is, because the supercoiling is quenched by chloroquine and the actual
+is, because the supercoiling is quenched by CQ and the actual
 supercoiled plasmids travelled as multiple topoisomers. A ``median'' of
 their migration speed was used to calculate the $RM$ of each sample.
-
+%
 Subsequently, \citet{Vijayan2009} used the same species,
 the same endogenous plasmid and the same principle to analyze plasmid
 supercoiling after gyrase inhibition and correlate it to global
@@ -459,15 +472,14 @@ cycle of cyanobacteria remains unclear.
 \begin{figure}[ht!]
     \includegraphics[width=\textwidth]{figures/keller_puc19.jpg}
   \caption{\textbf{pUC19 on 1.2 \% agarose gel supplemented with 0--8
-      \si{\ugml} chloroquine.} Samples of the pUC19 plasmid, isolated
-    from \textit{E. coli}, were treated with 0--3000 \si{\ugml}
-    chloroquine and topoisomerase I as indicated (lanes). The sample
-    “C” is untreated pUC19 as control. Size marker "S" is the
-    GeneRuler 1 kb DNA Ladder. The samples were split an separated on
-    6 agaose gels, each supplement with a chloroquine concentration
-    from 0 to 8 \si{\ugml} as indicated (lower right). The top band
-    in each gel is the open circular form. The band between  2.5 kb and 3 kb
-    is the linear form of the plasmid.}
+      \si{\ugml} CQ.} Samples of the pUC19 plasmid, isolated from
+    \textit{E. coli}, were treated with 0--3000 \si{\ugml} CQ and
+    topoI as indicated (lanes). The sample “C” is untreated pUC19 as
+    control. Size marker "S" is the GeneRuler 1 kb DNA Ladder. The
+    samples analyzed on 6 agarose gels, each supplemented with a CQ
+    concentration from 0 to 8 \si{\ugml} as indicated (lower
+    right). The top band in each gel is the open circular form. The
+    band between 2.5 kb and 3 kb is the linear form of the plasmid.}
   \label{fig:keller} 
 \end{figure}
 
@@ -477,33 +489,33 @@ cycle of cyanobacteria remains unclear.
 \cite{Keller1975b} analyzed the linking number of the circular genome
 of the simian virus 40 (SV40, \SI{5.2}{kb}), propagated in and
 isolated from African green monkey cells (CV-1). For this, the DNA was
-subjected to \textit{in vitro} relaxation with a DNA-relaxing enzyme
-purified from human tissue culture cells (KB-3).  EtBr concentrations
-in the topoI reaction (10 mM Tris-HCl, 0.2 M NaCl, 0.05 mM
+subjected to \textit{in vitro} relaxation with an NC enzyme
+purified from human tissue culture cells (KB-3).  \remove{EtBr concentrations
+in the relaxation reaction \remove{(10 mM Tris-HCl, 0.2 M NaCl, 0.05 mM
 dithiothreitol, 0.5 \% glycerol, 0.2 mM Na$_2$-EDTA) \todo{re-check
-  buffers} were $\cqtop{}=\SIrange{0}{6.9}{\uM}$.
+  buffers}} were $\cqtop{}=\SIrange{0}{6.9}{\uM}$.}
 %keller fig 1/3: lanes 11 and 9 have in vivo supercoiling
 %
-Full relaxation of the SV40 DNA in the gel buffer (40 mM Tris-HCl (pH
-7.9), 5 mM sodium acetate, 1 mM Na$_2$-EDTA) was achieved at
-$\cqgel=\SI{0.06}{\ugml}$, or with \SI{394.3}{\gram\per\mol},
+Full relaxation of the SV40 DNA in the gel buffer \remove{(40 mM
+  Tris-HCl (pH 7.9), 5 mM sodium acetate, 1 mM Na$_2$-EDTA, with
+  buffer re-circulation)} was achieved at $\cqgel=\SI{0.06}{\ugml}$,
+or with \SI{394.3}{\gram\per\mol},
 $\cqgel=\SI{0.15}{\uM}$\footnote{0.06/394.3 = 0.00015 umol/ml= mMol =
   0.15 uM}. In the topo I reaction $\cqtop\approx\SI{4.5}{\uM}$ (lane
 9 in Figures 1 and 3 of \cite{Keller1975b}) were required to fully
-relax the DNA. The \textit{in vivo} supercoiling level of the SV40
-DNA was $\dlkr\approx24$ and $\sigma\approx0.05$.
+relax the DNA. The \textit{in vivo} supercoiling level of the SV40 DNA
+was $\dlkr\approx24$ and $\sigma\approx0.05$.
 
 Here, we propagated the pUC19 vector plasmid (\SI{2686}{bp}) in in
 \textit{Escherichia coli} and harvested plasmid in exponential phase
 on LB medium. A plasmid relaxation series was performed with the
-bacterial NC enzyme topoisomerase I (topo I) from New England Biolabs
-and in their CutSmart reaction buffer (see Methods). To find the
-appropriate chloroquine concentrations to reproduce Keller's band
+bacterial NC enzyme TopoI obtained from New England Biolabs. To find
+the appropriate CQ concentrations to reproduce Keller's band
 counting method, we first analyzed the EtBr concentrations used in the
 original publication, considered the ca. 1000x lower binding affinity
 of CQ, and adjusted concentrations from there.
 %
-Figure \ref{fig:keller} shows that the lowest CQ concentrations in the
+Figure \ref{fig:keller} shows that the lowest CQ concentration in the
 gel ($\cqgel=\SI{1}{\ugml}$) was sufficient to detect a clear change
 in the migration of all pUC19 topoisomers. Fully relaxed plasmids
 ($\cqtop=\SIrange{0}{200}{\ugml}$) had already shifted to positive
@@ -607,7 +619,10 @@ implementations of Keller's band counting method.
     culture (blue line, light/dark/dark) did not receive the final 12
     h of light and remained in the dark.  Note, that lower values
     indicate more negative supercoiling (higher $|\Delta
-    \overline{Lk}|$).}
+    \overline{Lk}|$). The absolute values of $\dlk$ are an estimate of
+    $\dlkr$, based on the distance to the relaxed forms after topoI
+    relaxation (not shown), and likely underestimates the real
+    $\dlkr$.}
     \label{fig:blot} 
 \end{figure}
 
@@ -617,24 +632,25 @@ implementations of Keller's band counting method.
 
 To clarify the unresolved issue whether DNA supercoiling is higher
 during the light or dark phases, we measured supercoiling levels of
-endogenous plasmids of \textit{Synechocystis sp.} PCC6803 (Moscow
-strain) \remove{and \textit{Synechococcus elongatus} PCC 7942} during
-diurnal light/dark (12 h/12 h) conditions and a prolonged dark phase
-(12 h light, followed by 24 h dark).  A large sample volume
-(\SI{25}{\mL}) was required to obtain enough plasmids, and direct
-mixing of the sample with an equal volume of pre-cooled
-(\SI{-20}{\celsius}) pure undenatured ethanol was key to successful
-plasmid extraction. However, the yield was still very low, limiting
-the amount of gels that can be run from one sample.
-
-Multiple putative topoisomer bands were detected at all sampled time
-points by agarose gel electrophoresis supplemented with chloroquine at
-either \SI{1}{\ugml} or \SI{20}{\ugml}
-(Fig. \ref{fig:blot}A, B). \scyst{} contains three short plasmids,
-two at 2.4 kb \cite{Yang1993b, Yang1994} and one at 5.2 kb
-\cite{Xu1997b} . Restriction analysis and Southern blots confirmed
-that the most pronounced topoisomer bands were obtained for plasmid
-pCA2.4\_M. 
+endogenous plasmids of \textit{Synechocystis sp.} PCC6803 (``Moscow
+strain'' PCC-M) \remove{and \textit{Synechococcus elongatus} PCC 7942}
+during diurnal light/dark (\SI{12}{\hour}/\SI{12}{\hour}) conditions
+and a prolonged dark phase (\SI{12}{\hour} light, followed by
+h\SI{24}{\hour} darkness).  A large sample volume (\SI{25}{\mL}) was
+required to obtain enough plasmids, and direct mixing of the sample
+with an equal volume of pre-cooled (\SI{-20}{\celsius}) pure
+undenatured ethanol was key to successful plasmid extraction. However,
+the yield was still very low (\SIrange{0.5}{1}{\ug}, but incl. genomic
+DNA), limiting the amount of gels that can be run from one sample.
+%
+Multiple sets of putative topoisomer bands were detected at all
+sampled time points by agarose gel electrophoresis supplemented with
+chloroquine at either \SI{1}{\ugml} or \SI{20}{\ugml}
+(Fig. \ref{fig:blot}A, B). \scyst{} contains three short plasmids, two
+at \SI{2.4}{kb} \cite{Yang1993b, Yang1994} and one at \SI{5.2}{kb}
+\cite{Xu1997b}. Restriction analysis and Southern blots confirmed that
+the most pronounced topoisomer bands were obtained for plasmid
+pCA2.4\_M.
 %
 The migration distances on the gels were different between samples and
 the relative differences reversed between the two CQ
@@ -646,7 +662,7 @@ concentrations, respectively.  \remove{Topo I relaxation time series
   of pooled samples from light and dark phases further confirmed that
   more relaxed plasmids migrate faster at the high CQ concentration
   (Fig. \ref{fig:topoi}A).}
-
+%
 Next, we quantified the agarose gels by generating electropherograms
 of each lane in ImageJ. Baseline correction, peak detection and peak
 area quantification were performed in R (Fig. \ref{fig:blot}C). For
@@ -848,9 +864,10 @@ were prepared by heating to boiling. After cooling (hand-warm) CQ was
 added to the indicated final concentration from a stock solution
 (\SI{10}{\milli\gram\per\milli\liter}) and the mixture poured into the
 gel chamber. The running buffer was 0.5x TBE buffer with the same CQ
-concentration as the gel. For each sample, \SI{250}{\ng} plasmid DNA
-was mixed with loading dye and filled up to \SI{30}{\uL} with water.
-Gels were run for \SIrange{16}{24}{\hour} at \SI{40}{\volt}
+concentration as the gel. For each sample, \SI{250}{\ng}
+(\textit{E. coli}/pUC19) or \SI{1}{\ug} (\scyst{}) of plasmid DNA were
+mixed with loading dye and filled up to \SI{30}{\uL} with water.  Gels
+were run for \SIrange{16}{24}{\hour} at \SI{40}{\volt}
 (\SI{1.8}{\volt\per\cm}) in a Peqlab gel chamber, covered in foil to
 protect from light. Gels were then washed two times for
 \SI{30}{\minute} in \SI{250}{\mL} 0.5x TBE buffer to remove the CQ,
@@ -862,13 +879,13 @@ light-protected.
 \paragraph{Southern Blots of Agarose Gels.}
 
 Probes for Southern blots were generated by colony PCR using the
-primers in Table \ref{tab:blot} (PCR programm: 3 min,
+primers in Table \ref{tab:blot} and the PCR programm: 3 min,
 \SI{95}{\celsius}; 35x(\SI{95}{\celsius} 30s, \SI{50}{\celsius} 30s,
-\SI{72}{\celsius} 1 min); \SI{72}{\celsius} 5 min).  The products were
+\SI{72}{\celsius} 1 min); \SI{72}{\celsius} 5 min.  The products were
 isolated by cutting the band from an agarose gel and clean-up with the
 NucleoSpin Extract II kit (Macherey-Nagel).  Labelled DNA was
-generated using the same PCR program with the DIG Easy Hyb (Roche, 1603558)
-mix, according to manufacturer's instruction.
+generated using the same PCR program with the DIG Easy Hyb (Roche,
+1603558) mix, according to manufacturer's instruction.
 %
 Southern blots were generated using the CDP-Star kit with slight
 modifications as follows.  Gels were blotted onto a nitrocellulose
@@ -881,8 +898,8 @@ then transfered to the blot and hybridized over night at
 0.1 \% SDS at \SI{50}{\celsius}, then with 2x 15 min mit 0.1x SSC und
 0.1 \% SDS at \SI{65}{\celsius}, and cross-linked with UV light
 \todo{model} for \SI{10}{\min}. All further steps were performed
-according to the CDP-Star manual and \raim{blots were imaged on a
-  BioRad Imaging System (ChemiDoc MP).}
+according to the CDP-Star manual and blots were imaged on a
+  BioRad Imaging System (ChemiDoc MP).
 
 %Ich vermute, dass die Gele mit Dem Vakuum-Blotter geblottet wurden (mein Standard-Protokoll sagt, dass 90 min bei 5-7 mm Hg Unterdruck mit 10x SSC-Puffer geblottet wird). Danach wird die Membran zweimal mit 2x SSC-Puffer gewaschen und dann 5-10 min mit UV gecrosslinkt. Der Rest müsste so passen.
 
@@ -938,7 +955,7 @@ not determined, eg. by Keller's band counting method
 assignment of a reference band that was present in all lanes to
 $\Delta Lk=-8$, and this can be considered a maximal estimate of the
 true $\Delta Lk$ based on the distance of topoisomer and relaxed DNA
-bands in a topoisomerase I relaxation experiment (not shown).
+bands in a topoI relaxation experiment (not shown).
 
 \bibliographystyle{plainnat} %abbrvnat}%unsrt}
 \setlength{\bibsep}{0.0pt}
