@@ -154,7 +154,7 @@
 \newcommand{\selma}[1]{\begingroup{\color{red}Salima: #1}\endgroup}
 \newcommand{\TODO}[1]{\begingroup\color{red}*** #1 ***\endgroup}
 
-\newcommand{\remove}[1]{\begingroup\color{gray}\endgroup}
+\newcommand{\remove}[1]{}
 \newcommand{\cut}[1]{\begingroup\color{gray}#1\endgroup}
 
 
@@ -217,11 +217,10 @@ unwinding angle, on the ionic strength of the buffer. Lower levels of
 CQ were required to fully relax \textit{in vivo} pUC19 supercoiling
 than were used by Woelfle \textit{et al.} Next, we analyzed the
 \textit{in vivo} supercoiling of endogenous plasmids of
-\remove{\textit{Synechococcus elongatus} and} \textit{Synechocystis sp.}
-PCC 6803, at two different CQ concentrations.  This clearly indicates
-that negative supercoiling of plasmids does not increase but decreases
-in the dark phase, and progressively decreases further in prolonged
-darkness.
+\textit{Synechocystis} sp.  PCC 6803, at two different CQ
+concentrations.  This clearly indicates that negative supercoiling of
+plasmids does not increase but decreases in the dark phase, and
+progressively decreases further in prolonged darkness.
 
 % now start line numbers
 \linenumbers
@@ -490,22 +489,14 @@ cycle of cyanobacteria remains unclear.
 \cite{Keller1975b} analyzed the linking number of the circular genome
 of the simian virus 40 (SV40, \SI{5.2}{kb}), propagated in and
 isolated from African green monkey cells (CV-1). For this, the DNA was
-subjected to \textit{in vitro} relaxation with an NC enzyme
-purified from human tissue culture cells (KB-3).  \remove{EtBr concentrations
-in the relaxation reaction \remove{(10 mM Tris-HCl, 0.2 M NaCl, 0.05 mM
-dithiothreitol, 0.5 \% glycerol, 0.2 mM Na$_2$-EDTA) \todo{re-check
-  buffers}} were $\cqtop{}=\SIrange{0}{6.9}{\uM}$.}
-%keller fig 1/3: lanes 11 and 9 have in vivo supercoiling
-%
-Full relaxation of the SV40 DNA in the gel buffer \remove{(40 mM
-  Tris-HCl (pH 7.9), 5 mM sodium acetate, 1 mM Na$_2$-EDTA, with
-  buffer re-circulation)} was achieved at $\cqgel=\SI{0.06}{\ugml}$,
-or with \SI{394.3}{\gram\per\mol},
-$\cqgel=\SI{0.15}{\uM}$\remove{0.06/394.3 = 0.00015 umol/ml= mMol =
-  0.15 uM}. In the topo I reaction $\cqtop\approx\SI{4.5}{\uM}$ (lane
-9 in Figures 1 and 3 of \cite{Keller1975b}) were required to fully
-relax the DNA. The \textit{in vivo} supercoiling level of the SV40 DNA
-was $\dlkr\approx24$ and $\sigma\approx0.05$.
+subjected to \textit{in vitro} relaxation with an NC enzyme purified
+from human tissue culture cells (KB-3).  Full relaxation of the SV40
+DNA in the gel buffer was achieved at $\cqgel=\SI{0.06}{\ugml}$, or
+with \SI{394.3}{\gram\per\mol}, $\cqgel=\SI{0.15}{\uM}$. In the topo I
+reaction $\cqtop\approx\SI{4.5}{\uM}$ (lane 9 in Figures 1 and 3 of
+\cite{Keller1975b}) were required to fully relax the DNA. The
+\textit{in vivo} supercoiling level of the SV40 DNA was
+$\dlkr\approx24$ and $\sigma\approx0.05$.
 
 Here, we propagated the pUC19 vector plasmid (\SI{2686}{bp}) in in
 \textit{E. coli} DH5$\alpha$ and harvested plasmids in exponential
@@ -528,16 +519,9 @@ shifted to positive supercoiling at $\cqgel>\SI{4}{\ugml}$.  The
 topoisomers relaxed at the highest concentration
 ($\cqtop=\SI{3000}{\ugml}$) appeared with band patterns almost
 identical to the untreated control in all gels.  With a molecular
-weight of \SI{515.86}{\gram\per\mol} (chloroquine diphosphate),
-fully relaxing concentrations of CQ were thus
-$\cqgel\sim\SI{3.9}{\uM}$\remove{2/515.86=0.0039 umol/ml = mMol =
-  3.9 uMol} and $\cqtop\sim\SI{5.8}{\mM}$\remove{3000/515.86 = 5.8
-  umol/ml = 5.8 mMol}.
-%
-%Thus, the concentration to fully relax the original level of DNA
-%supercoiling was \SIrange{1}{4}{\ugml} in the agarose gel buffer (0.5x
-%TBE), and \SIrange{1000}{3000}{\ugml} in the CutSmart reaction buffer
-%(see Methods for composition).
+weight of \SI{515.86}{\gram\per\mol} (chloroquine diphosphate), fully
+relaxing concentrations of CQ were thus $\cqgel\sim\SI{3.9}{\uM}$ and
+$\cqtop\sim\SI{5.8}{\mM}$.
 %
 Counting topoisomers across gels shows that the untreated
 control has a $\dlkr=\numrange{-15}{-16}$. With \SI{2686}{bp} length,
@@ -639,8 +623,7 @@ implementations of Keller's band counting method.
 To clarify the unresolved issue whether DNA supercoiling is higher
 during the light or dark phases in cyanobacteria, we measured
 supercoiling levels of endogenous plasmids of \textit{Synechocystis
-  sp.} PCC6803 (``Moscow strain'' PCC-M) \remove{and
-  \textit{Synechococcus elongatus} PCC 7942} during diurnal light/dark
+  sp.} PCC6803 (``Moscow strain'' PCC-M) during diurnal light/dark
 (\SI{12}{\hour}/\SI{12}{\hour}) conditions and a prolonged dark phase
 (\SI{12}{\hour} light, followed by h\SI{24}{\hour} darkness).  A large
 sample volume (\SI{25}{\mL}) was required to obtain enough plasmids,
@@ -665,10 +648,7 @@ concentrations. This change of relative migration speed indicates that
 plasmids are still negatively supercoiled at the low, but positively
 supercoiled at the high concentration. Plasmids which were originally
 more relaxed migrate slower and faster at the low and high
-concentrations, respectively.  \remove{Topo I relaxation time series
-  of pooled samples from light and dark phases further confirmed that
-  more relaxed plasmids migrate faster at the high CQ concentration
-  (Fig. \ref{fig:topoi}A).}
+concentrations, respectively.  
 %
 Next, we quantified the agarose gels by generating electropherograms
 of each lane in ImageJ. Baseline correction, peak detection and peak
@@ -864,16 +844,6 @@ addition of \SI{3}{\uL} of 6x DNA loading dye with \SI{1}{\percent}
 SDS and incubation at \SI{80}{\celsius} for \SI{15}{\minute}. The
 resulting \SI{18}{\uL} were loaded directly onto the agaorse gels
 
-\remove{To test plasmid relaxation by topoisomerase I pooled samples
-  from light and dark phases were split and for each reaction
-  \SI{10}{\uL} of plasmid extracts were mixed with \SI{5}{\uL} 3x
-  reaction buffer (150 mM Tris, 150 mM KCl, 30 mM MgCl2 , 1.5 mM DTT,
-  0.3 mM EDTA, \SI{90}{\ugml} BSA) with or without 1 U of TopoI
-  (Invitrogen, Cat. no. 38042-024). The reactions were incubated at
-  \SI{37}{\celsius} and stopped after the indicated times by addition
-  of \SI{3}{\uL} of 6x DNA loading dye with \SI{1}{\percent} SDS at
-  \SI{80}{\celsius} for \SI{15}{\minute}. The resulting \SI{18}{\uL}
-  were loaded onto the agarose gel (Fig. \ref{fig:diurnalcq}E).}
 
 \paragraph{Chloroquine Agarose Gel Electrophoresis.}
 Agarose gels with different concentrations of chloroquine diphosphate
