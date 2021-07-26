@@ -873,10 +873,10 @@ resulting \SI{18}{\uL} were loaded directly onto the agaorse gels
 Agarose gels with different concentrations of chloroquine diphosphate
 salt (CQ, Sigma: C6628-50G, CAS: 50-63-5) were used to determine the
 relative migration speed of supercoiled topoisomers. 1.2\% agarose
-gels in 0.5x TBE (5.4 g/L Tris base, 2.75 g/L boric acid, 4 mL/L of
-0.5 M EDTA (pH 8.0), pH 8.3).  were prepared by heating to
-boiling. After cooling (hand-warm) CQ was added to the indicated final
-concentration from a stock solution
+gels in 0.5x TBE (Roth: 3061.2; 0.5x: 5.4 g/L Tris base, 2.75 g/L
+boric acid, 4 mL/L of 0.5 M EDTA (pH 8.0), pH 8.3) were prepared by
+heating to boiling. After cooling (hand-warm) CQ was added to the
+indicated final concentration from a stock solution
 (\SI{10}{\milli\gram\per\milli\liter}) and the mixture poured into the
 gel chamber. The running buffer was 0.5x TBE buffer with the same CQ
 concentration as the gel. For each sample, \SI{250}{\ng}
@@ -949,23 +949,23 @@ detect peaks (bands) with the \texttt{msPeakSimple} function from
 
 For topoisomer analysis peaks were detected with the
 \texttt{msPeakSimple} function and the assigned consecutive integral
-linking number values $\Delta Lk$ with an estimated offset of a
+linking number values $\Delta Lk_i$ with an estimated offset of a
 reference peak from the relaxed form with $Lk=0$. The areas under the
 peaks $A_{\Delta Lk}$ were calculated and the average linking number
 deficit of a sample was then determined as the center of mass
 \begin{equation}
   \label{eq:dlk}
-  \Delta \overline{Lk} = \sum{(\Delta Lk \cdot
-    A_{\Delta Lk})}/\sum{A_{\Delta Lk}}
+  \Delta \overline{Lk} = \sum_{i=1}^N{(\Delta Lk_i \cdot
+    A_{\Delta Lk_i})}/\sum_{i=1}^N{A_{\Delta Lk_i}}
 \end{equation}
-of all topoisomer bands.
+of all $N$ identified topoisomer bands.
 
 Note, that the true $\Delta Lk$ of bands from the relaxed plasmid was
 not determined, eg. by Keller's band counting method
 \cite{Keller1975b}.  The calculated $\Delta Lk$ values refer to an
 assignment of a reference band that was present in all lanes to
-$\Delta Lk=-8$, and this can be considered a maximal estimate of the
-true $\Delta Lk$ based on the distance of topoisomer and relaxed DNA
+$\Delta Lk=-8$, and this can be considered a minimal estimate of the
+true $|\Delta Lk|$, based on the distance of topoisomer and relaxed DNA
 bands in a topoI relaxation experiment (not shown).
 
 \bibliographystyle{plainnat} %abbrvnat}%unsrt}
