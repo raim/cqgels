@@ -420,7 +420,7 @@ A lower, fastest migrating band that also appeared in all samples
 is denoted as ``SC''. However, it is unclear what this band actually
 is, because the supercoiling is quenched by CQ and the actual
 supercoiled plasmids travelled as multiple topoisomers. A ``median'' of
-their migration speed was used to calculate the $RM$ of each sample.
+topoisomer migration speed was used to calculate the $RM$ of each sample.
 %
 Subsequently, \citet{Vijayan2009} used the same species,
 the same endogenous plasmid and the same principle to analyze plasmid
@@ -471,15 +471,16 @@ cycle of cyanobacteria remains unclear.
 
 \begin{figure}[ht!]
     \includegraphics[width=\textwidth]{figures/keller_puc19.jpg}
-  \caption{\textbf{pUC19 on 1.2 \% agarose gel supplemented with 0--8
-      \si{\ugml} CQ.} Samples of the pUC19 plasmid, isolated from
-    \textit{E. coli}, were treated with 0--3000 \si{\ugml} CQ and
+  \caption{\textbf{pUC19 on 1.2 \% agarose gel supplemented CQ.}
+    Samples of the pUC19 plasmid, isolated from \textit{E. coli}, were
+    partially relaxed with $\cqtop=\SIrange{0}{3000}{\ugml}$ CQ and
     topoI as indicated (lanes). The sample “C” is untreated pUC19 as
-    control. Size marker "S" is the GeneRuler 1 kb DNA Ladder. The
-    samples analyzed on 6 agarose gels, each supplemented with a CQ
-    concentration from 0 to 8 \si{\ugml} as indicated (lower
-    right). The top band in each gel is the open circular form. The
-    band between 2.5 kb and 3 kb is the linear form of the plasmid.}
+    control. Size marker "S" is the GeneRuler \SI{1}{kb} DNA
+    Ladder. The samples analyzed on 6 agarose gels, each supplemented
+    with a CQ concentration ($\cqgel=\SIrange{0}{8}{\ugml}$) as
+    indicated (lower right). The top band in each gel is the open
+    circular form. The band between \SI{2.5}{kb} and \SI{3}{kb} is the
+    linear form of the plasmid.}
   \label{fig:keller} 
 \end{figure}
 
@@ -507,13 +508,13 @@ relax the DNA. The \textit{in vivo} supercoiling level of the SV40 DNA
 was $\dlkr\approx24$ and $\sigma\approx0.05$.
 
 Here, we propagated the pUC19 vector plasmid (\SI{2686}{bp}) in in
-\textit{Escherichia coli} and harvested plasmid in exponential phase
-on LB medium. A plasmid relaxation series was performed with the
+\textit{E. coli} DH5$\alpha$ and harvested plasmids in exponential
+phase on LB medium. A plasmid relaxation series was performed with the
 bacterial NC enzyme TopoI obtained from New England Biolabs. To find
-the appropriate CQ concentrations to reproduce Keller's band
-counting method, we first analyzed the EtBr concentrations used in the
-original publication, considered the ca. 1000x lower binding affinity
-of CQ, and adjusted concentrations from there.
+the appropriate CQ concentrations to reproduce Keller's band counting
+method, we first analyzed the EtBr concentrations used in the original
+publication, considered the ca. 1000x lower binding affinity of CQ,
+and adjusted concentrations from there.
 %
 Figure \ref{fig:keller} shows that the lowest CQ concentration in the
 gel ($\cqgel=\SI{1}{\ugml}$) was sufficient to detect a clear change
@@ -745,10 +746,10 @@ electrophoresis platforms (Bioanalyzer, TapeStation).
 %
 And finally, \citet{Vetcher2010} recently suggested a model that can
 partially explain topoisomer mobility differences in agarose gels,
-based on the writhe component $Wr$ of \dlk{}. Implementing such
+based on the writhe component of \dlk{}. Implementing such
 theories in analysis tools could further support automatization.
 Standardized and automated analysis tools for both, gel images and
-capillary electrophoresis platforms could open this old and elegant
+capillary electrophoresis platforms, could open this old and elegant
 method for modern molecular biology laboratories.
 
 
@@ -768,16 +769,17 @@ AX~84/4-1, STA~850/30-1 and EXC-2048/1--project ID 390686111.
 
 \paragraph{pUC19 Plasmid Extraction.}
 The vector DNA plasmid pUC19 (Roth: X911.1) was transferred into
-\textit{Escherichia coli} DH5$\alpha$ via heat shock
-transformation. DH5$\alpha$\_pUC19 was inoculated into LB medium and
-grown overnight at \SI{37}{\celsius} and \SI{250}{rpm}. The preculture
-was diluted 1:200 in fresh LB and grown for another \SI{3}{\hour}, and
-harvested in exponential phase. The culture was centrifuged and pUC19
-was isolated with ZymoPURE's Plasmid Maxiprep Kit. The isolated
-plasmid was then purified (linear and open circular forms digested)
-via T5 exonuclease (NEB: M0363) reaction and the NucleoSpin Gel and
-PCR Clean-up kit (Machery-Nagel). The final plasmid DNA concentration
-was determined with the Nanodrop (Thermo Scientific NanoDrop 2000c).
+\textit{Escherichia coli} DH5$\alpha$ via heat shock transformation
+and clones selected on LB plates with the pUC19 selection marker
+(ampicillin). A single colony was inoculated into LB medium and grown
+overnight at \SI{37}{\celsius} and \SI{250}{rpm}. The preculture was
+diluted 1:200 in fresh LB and harvested in exponential phase after
+\SI{3}{\hour}. The culture was centrifuged and pUC19 was isolated with
+ZymoPURE's Plasmid Maxiprep Kit. The isolated plasmid was then
+purified (linear and open circular forms digested) via T5 exonuclease
+(NEB: M0363) reaction and the NucleoSpin Gel and PCR Clean-up kit
+(Machery-Nagel). The final plasmid DNA concentration was determined
+with the Nanodrop (Thermo Scientific NanoDrop 2000c).
 %
 \paragraph{pUC19 Relaxation Series.}
 The pUC19 plasmid extract was split and \SI{1}{\ug} samples were
