@@ -563,48 +563,51 @@ implementations of Keller's band counting method.
 
 
 \begin{figure}[ht!]
-   \begin{minipage}{.49\textwidth}
-    \includegraphics[width=\textwidth]{figures/diurnal/20130620_pCA_CQ1.png}\\
+  \begin{minipage}{.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/diurnal/20130620_pCA_CQ1.png}
+    
+    \vspace{-.5cm}
+    \textbf{A}
+    
     \includegraphics[width=\textwidth]{figures/diurnal/20130821_pCA_CQ20.png}
   \end{minipage}
- \begin{minipage}{.39\textwidth}
-   \includegraphics[width=\textwidth]{figures/diurnal/YL_01_cropped.png}
-
-   \vspace{-.5cm}
-   \textbf{B}
+  \begin{minipage}{.39\textwidth}
+    \includegraphics[width=\textwidth]{figures/diurnal/YL_01_cropped.png}
    
+    \vspace{-.5cm}
+    \textbf{C}
+    
     \includegraphics[width=\textwidth]{figures/diurnal/linkingNumbers.png}
   \end{minipage}
-
- \vspace{-.5cm}
- \textbf{A}\hspace{.48\textwidth}\textbf{C}
- \vspace{.2cm}
-
+  
+  \vspace{-.5cm}
+  \textbf{B}\hspace{.48\textwidth}\textbf{D}
+  \vspace{.2cm}
+  
   \caption{\textbf{Diurnal Plasmid Supercoiling in
-      \scyst{}}. \textbf{A:} Southern blots with a probe for the
+      \scyst{}}. \textbf{A \& B:} Southern blots with a probe for the
     pCA2.4\_M plasmid of \SI{1.2}{\percent} agarose gels supplemented
-    with \SI{1}{\ugml} (A, top) or \SI{20}{\ugml} (A, bottom) CQ. The
-    samples were extracted from diurnal growth experiments, left lanes
-    from light/dark/light conditions and right lanes with a prolonged
-    dark phase (light/dark/dark). The central lane in the bottom panel
-    shows a pooled plasmid sample after treatment with the NcoI
-    restriction enzyme which cuts only the pCA2.4\_M plasmid (one cut
-    site) but not the similarly sized pCB2.4\_M. \textbf{B:} Example
+    with \SI{1}{\ugml} (A) or \SI{20}{\ugml} (B) CQ. The samples were
+    extracted from two diurnal growth experiments and applied in the
+    same order on both gels (see C). The central lane in (B) shows a
+    pooled plasmid sample after treatment with the NcoI restriction
+    enzyme which cuts only the pCA2.4\_M plasmid (one cut site) but
+    not the similarly sized pCB2.4\_M. \textbf{C:} Example
     electropherogram of a single lane of topoisomers, extraced with
     ImageJ from a gel image and analyzed using peak detection routines
     to subtract a baseline (top, blue and green lines)) and calculate
     a mean linking number from topoisomer peak areas (bottom,
-    $\dlk_\text{ref}=-8.24$).  \textbf{C:} Diurnal time-series of the
+    $\dlk_\text{ref}=-8.24$).  \textbf{D:} Diurnal time-series of the
     average linking number deficits ($\Delta \overline{Lk}$) of the
     pCA2.4\_M plasmids, calculated from three replicates of agarose
-    gels with \SI{20}{\ugml} (A, top) and the single replicate of the
-    gel with \SI{1}{\ugml} (A, bottom).  The dotted thin lines are
-    values from the 4 different gels and the thick lines are their
-    means and standard deviations.  Gray background indicates the dark
-    phases. One culture (blue line, light/dark/dark) did not receive
-    the final 12 h of light and remained in the dark.  Note, that
-    lower values indicate more \textbf{negative} supercoiling (higher
-    $|\Delta \overline{Lk}|$).}
+    gels with \SI{20}{\ugml} (B) and the single replicate of the gel
+    with \SI{1}{\ugml} (A).  The dotted thin lines are values from the
+    4 different gels and the thick lines are their means and standard
+    deviations.  Gray background indicates the dark phases. One
+    culture (blue line, light/dark/dark) did not receive the final 12
+    h of light and remained in the dark.  Note, that lower values
+    indicate more negative supercoiling (higher $|\Delta
+    \overline{Lk}|$).}
     \label{fig:blot} 
 \end{figure}
 
@@ -615,7 +618,7 @@ implementations of Keller's band counting method.
 To clarify the unresolved issue whether DNA supercoiling is higher
 during the light or dark phases, we measured supercoiling levels of
 endogenous plasmids of \textit{Synechocystis sp.} PCC6803 (Moscow
-strain) \raim{and \textit{Synechococcus elongatus} PCC 7942} during
+strain) \remove{and \textit{Synechococcus elongatus} PCC 7942} during
 diurnal light/dark (12 h/12 h) conditions and a prolonged dark phase
 (12 h light, followed by 24 h dark).  A large sample volume
 (\SI{25}{\mL}) was required to obtain enough plasmids, and direct
@@ -627,11 +630,11 @@ the amount of gels that can be run from one sample.
 Multiple putative topoisomer bands were detected at all sampled time
 points by agarose gel electrophoresis supplemented with chloroquine at
 either \SI{1}{\ugml} or \SI{20}{\ugml}
-(Fig. \ref{fig:diurnalcq}A,B). \scyst{} contains three short plasmids,
+(Fig. \ref{fig:blot}A, B). \scyst{} contains three short plasmids,
 two at 2.4 kb \cite{Yang1993b, Yang1994} and one at 5.2 kb
 \cite{Xu1997b} . Restriction analysis and Southern blots confirmed
 that the most pronounced topoisomer bands were obtained for plasmid
-pCA2.4\_M (Fig. \ref{fig:diurnalcq}C \& D).
+pCA2.4\_M. 
 %
 The migration distances on the gels were different between samples and
 the relative differences reversed between the two CQ
@@ -639,25 +642,25 @@ concentrations. This change of relative migration speed indicates that
 plasmids are still negatively supercoiled at the low, but positively
 supercoiled at the high concentration. Plasmids which were originally
 more relaxed migrate slower and faster at the low and high
-concentrations, respectively.  Topo I relaxation time series of pooled
-samples from light and dark phases further confirmed that more relaxed
-plasmids migrate faster at the high CQ concentration
-(Fig. \ref{fig:topoi}A).
+concentrations, respectively.  \remove{Topo I relaxation time series
+  of pooled samples from light and dark phases further confirmed that
+  more relaxed plasmids migrate faster at the high CQ concentration
+  (Fig. \ref{fig:topoi}A).}
 
 Next, we quantified the agarose gels by generating electropherograms
-of each lane in ImageJ. A baseline correction and peak detection and
-peak area quantification were performed in R
-(Fig. \ref{fig:topoi}B). For each sample an average linking
-number deficit $\Delta \overline{Lk}$ was calculated and plotted as time series
-over the light/dark cycles.  Plasmids were more supercoiled (higher
-$|\Delta \overline{Lk}|$) during light phases, and reached a maximal level only
-30 min after transition to the light phase. This level was maintained
-or only slightly increased throughout the 12 h light phase.  During
-the dark phase the transition was slower, and plasmids became
-progressively more relaxed during the 12 h, and relaxation continued
-at equal pace during an additional 12 h dark phase
-(Fig. \ref{fig:topoi}C).
-
+of each lane in ImageJ. Baseline correction, peak detection and peak
+area quantification were performed in R (Fig. \ref{fig:blot}C). For
+each sample an average linking number deficit $\Delta \overline{Lk}$
+was calculated and plotted as time series over the light/dark cycles
+(Fig. \ref{fig:blot}D).  Plasmids were more negatively supercoiled
+(lower $\Delta \overline{Lk}$) during light phases, and reached a
+maximal level only \SI{30}{\minute} after transition to the light
+phase. This level was maintained or only slightly increased throughout
+the 12 h light phase.  During the dark phase the transition was
+slower, and plasmids became progressively more relaxed during the 12
+h, and relaxation continued at equal pace during an additional 12 h
+dark phase.
+%
 The maximal linking number differences between light and dark phase
 were only $\Delta \Delta \overline{Lk} \approx 1$, and $\Delta \Delta
 \overline{Lk} \approx 2$ after the prolonged dark phase.
@@ -732,7 +735,8 @@ method for modern molecular biology laboratories.
 \section*{Data Availability}
 All gel images and electropherogramms are available on request. Our
 chloroquine agarose protocols \TODO{will be made} available at
-\url{protocols.io}.
+\url{protocols.io}. Custom and gel-specific R analysis scripts are
+available on request.
 
 \section*{Funding}
 RM was funded by the \textit{Deutsche Forschungsgemeinschaft}, grants
@@ -813,7 +817,7 @@ volumes of the PB buffer. The final plasmid DNA concentration was
 determined with the Nanodrop.
 
 
-\paragraph{\scyst{} Plasmid Restriction and Relaxation Analyses.}
+\paragraph{\scyst{} Plasmid Restriction Analyses.}
 A pooled sample of plasmid extracts from \scyst{} was subjected to
 rectriction by NcoI (Thermo Scientific: FD0573), which has a single
 cut site in pCA2.4\_M but not in the similarly sized pCB2.4\_M.
@@ -822,19 +826,18 @@ enzyme were added to \SI{12.5}{\uL} of plasmid samples. Reactions were
 incubated for \SI{30}{\minute} at \SI{37}{\celsius} and stopped by
 addition of \SI{3}{\uL} of 6x DNA loading dye with \SI{1}{\percent}
 SDS and incubation at \SI{80}{\celsius} for \SI{15}{\minute}. The
-resulting \SI{18}{\uL} were loaded directly onto the agaorse gel of
-the time series in Figures \ref{fig:diurnalcq}A and C.
+resulting \SI{18}{\uL} were loaded directly onto the agaorse gels
 
-To test plasmid relaxation by topoisomerase I pooled samples from
-light and dark phases were split and for each reaction \SI{10}{\uL} of
-plasmid extracts were mixed with \SI{5}{\uL} 3x reaction buffer (150
-mM Tris, 150 mM KCl, 30 mM MgCl2 , 1.5 mM DTT, 0.3 mM EDTA,
-\SI{90}{\ugml} BSA) with or without 1 U of TopoI (Invitrogen,
-Cat. no. 38042-024). The reactions were incubated at \SI{37}{\celsius}
-and stopped after the indicated times by addition of \SI{3}{\uL} of 6x
-DNA loading dye with \SI{1}{\percent} SDS at \SI{80}{\celsius} for
-\SI{15}{\minute}. The resulting \SI{18}{\uL} were loaded onto the
-agarose gel (Fig. \ref{fig:diurnalcq}E).
+\remove{To test plasmid relaxation by topoisomerase I pooled samples
+  from light and dark phases were split and for each reaction
+  \SI{10}{\uL} of plasmid extracts were mixed with \SI{5}{\uL} 3x
+  reaction buffer (150 mM Tris, 150 mM KCl, 30 mM MgCl2 , 1.5 mM DTT,
+  0.3 mM EDTA, \SI{90}{\ugml} BSA) with or without 1 U of TopoI
+  (Invitrogen, Cat. no. 38042-024). The reactions were incubated at
+  \SI{37}{\celsius} and stopped after the indicated times by addition
+  of \SI{3}{\uL} of 6x DNA loading dye with \SI{1}{\percent} SDS at
+  \SI{80}{\celsius} for \SI{15}{\minute}. The resulting \SI{18}{\uL}
+  were loaded onto the agarose gel (Fig. \ref{fig:diurnalcq}E).}
 
 \paragraph{Chloroquine Agarose Gel Electrophoresis.}
 Agarose gels with different concentrations of chloroquine diphosphate
@@ -904,7 +907,7 @@ in R, using LOESS smoothing and peak detection functions from the
 \texttt{msProcess} R package (version 1.0.7)
 (\url{https://cran.r-project.org/web/packages/msProcess/}). A baseline
 was determined in two steps using the \texttt{msSmoothLoess} function
-(Fig. \ref{fig:diurnalcq}F, top panel).  The first step used the full
+(Fig. \ref{fig:blot}C, top panel).  The first step used the full
 signal and served to determine the coarse positions of peaks.  The
 final baseline was then calculated from the signal after removal of
 peak values. This baseline was subtracted from the total signal to
@@ -916,7 +919,7 @@ fragments, and was used to calculate ratios of rRNA peak areas to the
 
 \paragraph{Calculation of $\Delta Lk$.}
 For the diurnal time series we quantified relative linking number
-deficits (Fig. \ref{fig:diurnalcq}F, bottom panel) by analysis of
+deficits (Fig. \ref{fig:blot}C, bottom panel) by analysis of
 topoisomer peak areas.  Peaks were assigned consecutive
 integral linking number values $\Delta Lk$ with an estimated offset of
 a reference peak from the relaxed form with $Lk=0$. The areas under
@@ -932,11 +935,10 @@ of all topoisomer bands.
 Note, that the true $\Delta Lk$ of bands from the relaxed plasmid was
 not determined, eg. by Keller's band counting method
 \cite{Keller1975b}.  The calculated $\Delta Lk$ values refer to an
-arbitrary assignment of a reference band that was present in most
-lanes to $\Delta Lk=-8$, and this can be considered a maximal estimate
-of the true $\Delta Lk$ based on the distance of topoisomer and
-relaxed DNA bands in the topoisomerase I relaxation experiment in
-Figure \ref{fig:diurnalcq}G.
+assignment of a reference band that was present in all lanes to
+$\Delta Lk=-8$, and this can be considered a maximal estimate of the
+true $\Delta Lk$ based on the distance of topoisomer and relaxed DNA
+bands in a topoisomerase I relaxation experiment (not shown).
 
 \bibliographystyle{plainnat} %abbrvnat}%unsrt}
 \setlength{\bibsep}{0.0pt}
@@ -948,103 +950,6 @@ Figure \ref{fig:diurnalcq}G.
   \bibliography{cqgels}
 \end{spacing}
 
-\section{Supporting Material}
 
-
-\begin{figure}[ht!]
-  \begin{minipage}{.49\textwidth}
-    \includegraphics[width=\textwidth]{figures/diurnal/Y_CQ01_high_exposure.png}
-  \end{minipage}
-  \begin{minipage}{.49\textwidth}
-    \includegraphics[width=\textwidth]{figures/diurnal/20130618_1511.png}
-  \end{minipage}
-  
-  \vspace{-.5cm}
-  \textbf{C}
-  \vspace{.25cm}
-  
-  \begin{minipage}{.49\textwidth}
-    \includegraphics[width=\textwidth]{figures/diurnal/20130620_pCA_CQ1.png}
-  \end{minipage}
-  \begin{minipage}{.49\textwidth}
-    \includegraphics[width=\textwidth]{figures/diurnal/20130821_pCA_CQ20.png}
-  \end{minipage}
-  
-  \vspace{-.5cm}
-  \textbf{A}\hspace{.32\textwidth}\textbf{B}\hspace{.32\textwidth}\textbf{D}
-
-  \caption{\textbf{Chloroquine Gel Analysis: Calibration \& Diurnal
-      Supercoiling}. \small{\textbf{A \& B:} agarose gels of plasmid
-      extracts from a diurnal growth experiments (see F); supplemented
-      with \SI{1}{\ugml} (A) or \SI{20}{\ugml} (B) chloroquine
-      diphosphate (CQ).  Additional lanes (left, right, center) show
-      the pUC19 plasmid isolated from \textit{E.coli} cultures as a
-      control, or (only A, central lane) a pooled plasmid sample after
-      treatment with NcoI restriction enzyme which cuts only the
-      pCA2.4\_M plasmid (one cut site) but not the similarly sized
-      pCB2.4\_M. All topoisomer bands are replaced by a single band of
-      linearized pCA2.4\_M. \textbf{C \& D:} Southern blots of the
-      gels in (A) and (B) using probes specific for the pCA2.4\_M
-      plasmid confirms the identity of the plasmid bands (Table
-      \ref{tab:blot}).}}
-    \label{fig:diurnalcq} 
-\end{figure}
-
-
-\begin{figure}
-  \begin{minipage}{.27\textwidth}
-    \includegraphics[width=\textwidth]{figures/diurnal/Y_CQ20_topoI_zoom_inv.png}
-  \end{minipage}
-  \begin{minipage}{.33\textwidth}
-    \includegraphics[width=\textwidth]{figures/diurnal/YL_01.png}
-  \end{minipage}
-  \begin{minipage}{.39\textwidth}
-    \includegraphics[width=\textwidth]{figures/diurnal/linkingNumbers.png}
-  \end{minipage}
-   
-  \vspace{-.75cm}
-  \textbf{A}\hspace{.26\textwidth}\textbf{B}\hspace{.33\textwidth}\textbf{C}
-  \vspace{.25cm}
-  
-  \caption{\textbf{Chloroquine Gel Analysis: Calibration \& Diurnal
-      Supercoiling}. \small{\textbf{A:} Mobility after relaxtion with
-      topoisomerase I on an agarose gel with \SI{20}{\ugml} CQ
-      confirms the faster migration of fully relaxed plasmids at these
-      conditions. Lanes 1-5: plasmids from pooled light phase samples
-      (YL). Lanes 6-10: plasmids from pooled dark phase samples
-      (YD). The topoisomerase I reaction was run for 1, 5, 10 and 30
-      min at \SI{37}{\celsius} (lanes 2-5, 7-10). The samples in lanes
-      1 and 6 were treated as the 30 min samples, but did not contain
-      topoisomerase I. \textbf{B:} Quantification of the linking
-      number deficit $\Delta Lk$ for lane 2 (YL, 1 min) from
-      electropherograms of the gel in (E).  See Methods for details;
-      in short: a baseline was determined in two steps (top panel) and
-      subtracted from the signal. For the range that included all
-      topoisomers of interest (vertical lines in top panel) the
-      location of peaks (bottom panel: vertical blue lines and x-axis
-      annotation) was detected from a smoothed version of the signal
-      (blue line). All peaks were assigned consecutive integral
-      linking number values $\Delta Lk$ with an estimated offset from
-      the relaxed form with $Lk=0$. The areas under the peaks
-      $A_{\Delta Lk}$ were calculated (gray areas) and the average
-      linking number deficit of the sample was then determined as the
-      center of mass $\Delta \overline{Lk} = \sum{(\Delta Lk \cdot
-        A_{\Delta Lk})}/\sum{A_{\Delta Lk}}$ of all topoisomer bands
-      (thick black horizontal line and top axis
-      annotation). \textbf{C:} Diurnal time-series of the average
-      linking number deficits ($\Delta \overline{Lk}$) of the
-      pCA2.4\_M plasmids, calculated from three replicates of the gel
-      in Figure \ref{fig:diurnalcq}A and one replicate of the gel in
-      \ref{fig:diurnalcq}B.  The dotted thin lines are values from
-      the 4 different gels and the thick lines are their means and
-      standard deviations.  Gray background indicates the dark
-      phases. One culture (blue line, light/dark/dark) did not receive
-      the final 12 h of light and remained in the dark.  Note, that
-      lower values indicate more \textbf{negative} supercoiling
-      (higher $|\Delta \overline{Lk}|$).}}
-  \label{fig:topoi} 
-\end{figure}
-
-   
 
 \end{document}
