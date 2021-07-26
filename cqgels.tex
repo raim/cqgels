@@ -329,16 +329,16 @@ from the mathematical field of topology, and \lk{} is the number of
 crossings of the two helix strands around each other.  In relaxed
 (non-supercoiled) DNA the double helix adopts its minimal free energy
 structure with \SIrange{10.4}{10.5}{bp} per helix turn, \eg{} a
-circular DNA with \SI{1000}{bp} has $\lkr=\numrange{95}{96}$. Since
-this depends on the size of the molecule, levels of DNA superocoiling
-are compared as the difference to this relaxed state linking number,
-$\dlkr=\lk-\lkr$ and as the supercoiling density
-$\sigma=\frac{\dlkr}{\lkr}$.  Negatively supercoiled DNA has $\dlkr<0$
-and positively supercoiled DNA has $\dlkr>0$.  Plasmids isolated from
-\textit{E. coli} typically have $\sigma=\numrange{-0.08}{-0.06}$,
-depending on the growth phase \cite{Liu2018}. Relative topoisomer
-abundances follow a Boltzmann distribution around a mean level of
-$\sigma$ \cite{Pulleyblank1975, Depew1975, Keller1975b}.
+circular DNA with \SI{1000}{bp} has $\lkr=\numrange{95}{96}$ such
+crossings. Levels of DNA superocoiling are usually provided as the
+difference to this relaxed state linking number, $\dlkr=\lk-\lkr$ and
+as the supercoiling density $\sigma=\frac{\dlkr}{\lkr}$.  Negatively
+supercoiled DNA has $\dlkr<0$ and positively supercoiled DNA has
+$\dlkr>0$.  Plasmids isolated from \textit{E. coli} typically have
+$\sigma=\numrange{-0.08}{-0.06}$, depending on the growth phase
+\cite{Liu2018}. Relative topoisomer abundances follow a Boltzmann
+distribution around a mean level of $\sigma$ \cite{Pulleyblank1975,
+  Depew1975, Keller1975b}.
 
 Supercoiled plasmids (\texttt{ccc}) form a more compact molecule than
 relaxed plasmids. This is achieved by a higher level structure where
@@ -696,8 +696,8 @@ results are the exact opposite of the results reported by
 \textit{Synechococcus elongatus} PCC 7942.  We believe that
 \citet{Woelfle2007} had misinterpreted the relative topoisomer
 mobilities, and the results are actually consistent between both
-species. This conclusion is further supported by the reversal
-of the interpretation of relative topoisomer mobilities by
+species. This conclusion is further supported by the reversal of the
+interpretation of relative topoisomer mobilities by
 \citet{Vijayan2009}.
   
 
@@ -712,19 +712,20 @@ method should be applied to each newly analysed plasmid. The low
 yields when extracting endogenous plasmids from cyanobacteria, the
 time-intensive calibration routine, and non-standard electropherogram
 analysis make it somewhat challenging to properly analyse \textit{in
-  vivo} supercoiling in a given species.  Can these methods be
-updated?
+  vivo} supercoiling in a given species.
 
-\citet{Mitchenall2018} reported separation of topoisomers of pBR322,
-pUC19, and a 339 bp DNA minicircle on a commercial capillary gel
-electrophoresis platform (Qiagen QIAxcel Advance System), where EtBr
-is part of the gel delivered in a cartridge. The system is quite
-sensitive and samples of \SI{100}{\ng} DNA sufficed. Moreover, the
-range of separated topoisomers was broader than on agarose gels. This
-would allow to use less runs with intercalator concentrations to
-achieve full separation of \textit{in vivo} levels of supercoiling.
-However, the intercalator type and concentration can not be
-manipulated in this system. We recently succeeded to separate pUC19
+Can these methods be updated to the requirements of current day
+laboratory practice?  \citet{Mitchenall2018} reported separation of
+topoisomers of pBR322, pUC19, and a 339 bp DNA minicircle on a
+commercial capillary gel electrophoresis platform (Qiagen QIAxcel
+Advance System), where EtBr is a component of the gel and used by the
+detection system for quantification. The system is quite sensitive and
+samples of \SI{100}{\ng} DNA sufficed. Moreover, the range of
+separated topoisomers was broader than on agarose gels. This would in
+principle allow to use fewer runs to achieve full separation of
+\textit{in vivo} levels of supercoiling.  However, the intercalator
+type and concentration can not be manipulated in this gel
+cartridge-based system. We recently succeeded to separate pUC19
 topoisomers by adding comparatively large concentrations of CQ
 ($\cqgel=\SIrange{1}{3}{\milli\gram\per\liter}$) to the commercial
 (and secret) gel delivered for the AATI Fragment Analyzer (now owned
@@ -733,7 +734,7 @@ the undisclosed fluorescent nucleic acid marker has effects on DNA
 supercoiling. More work and alternatives to the existing commercial
 systems are required to establish topoisomer separation by capillary
 gel electrophoresis as a standard procedure. This could potentially
-greatly reduce the amount of sample required per run. 
+greatly reduce the amount of sample required per run.
 
 The analysis of electropherograms is also a limiting factor for many
 laboratories. No standards or established tools exist on how to
@@ -949,7 +950,7 @@ final baseline was then calculated from the signal after removal of
 peak values. This baseline was subtracted from the total signal to
 detect peaks (bands) with the \texttt{msPeakSimple} function from
 \texttt{msProcess} and calculate peak areas.  
-
+%
 For topoisomer analysis peaks were detected with the
 \texttt{msPeakSimple} function and the assigned consecutive integral
 linking number values $\Delta Lk_i$ with an estimated offset of a
