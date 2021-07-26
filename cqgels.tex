@@ -689,7 +689,23 @@ were only $\Delta \Delta \overline{Lk} \approx 1$, and $\Delta \Delta
   by Agilent). But the results were not consistent between runs. More
   work and alternatives to the existing commercial systems is required
   to establish topoisomer separation by capillary gel electrophoresis
-  as a standard procedure.
+  as a standard procedure.  And finally, the analysis of
+  electropherograms is also a limiting factor. No standards or
+  established tools exist on how to calculate average linking number
+  differences between samples. To this end \citet{Ziraldo2019} provide
+  a plug-in for the ImageJ image analysis software that should
+  streamline the analysis of agarose gels. Here, we also used ImageJ
+  to extract electropherograms from gel images, and peak detection
+  routines from a mass-spectrometry R package, \texttt{msProcess} (see
+  Methods) which is not maintained anymore, to calculate average
+  linking numbers in R. A novel package, \texttt{bioanalyzeR}
+  (\url{https://github.com/jwfoley/bioanalyzeR}), allows to parse
+  electropherograms from data files exported by Agilent capillary
+  electrophoresis platforms (Bioanalyzer, TapeStation). Automated
+  analysis tools for both gel images and capillary electrophoresis
+  platforms could open this old and elegant method for modern
+  molecular biology laboratories.
+  
   
 }
 
