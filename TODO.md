@@ -9,3 +9,4 @@ gels.
 in constant darkness,
 * re-formulate more clearly:
 ""Figure 1 shows the relaxation experiment of pUC19. Addition of TopoI leads to a relaxation of pUC19, which decreases when CQ was present during the isomerization. With the addition of CQ to the gel, the supercoiled plasmids become relaxed and the TopoI-relaxed plasmids become positively supercoiled."
+* unify use of SI units.
