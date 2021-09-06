@@ -1,13 +1,17 @@
+---
+geometry: margin=4cm,top=2.5cm
+---
+
+\pagenumbering{gobble}
+
 Dear Prof. O'Shea and Prof. Johnson,
 
 A few years ago I was inspired by your publications on the involvement
 of DNA supercoiling in the diurnal and circadian gene expression in
-cyanobacteria, Woelfle et al. 2007 [1] and Vijayan et al. 2009 [2], both in
-PNAS. 
-
-We have now published a preprint on our own analyses of DNA
-supercoiling in *Synechocystis* [3], and I am in the process of submitting
-this to a journal. However, there is a minor problem:
+cyanobacteria, Woelfle et al. 2007 [1] and Vijayan et al. 2009 [2],
+both in PNAS. We have now published a preprint on our own analyses of
+DNA supercoiling in *Synechocystis* [3], and I am in the process of
+submitting this to a journal. However, there is a minor problem:
 
 In this publication, we use chloroquine-agarose gel electrophoresis of
 endogenous plasmids. We had established and adapted this method
@@ -34,8 +38,8 @@ this may also re-spark the interest in this topic and your seminal
 works on it.
 
 Thus, I would be very glad to get some feedback from you. Are our
-interpretations correct? Also: would you have any suggestion where
-this methodological clarification could be published?
+interpretations correct? Would you have any suggestion where this
+methodological clarification could be published?
 
 With kind regards,
 
