@@ -1,0 +1,456 @@
+@charset "utf-8";
+/* SchoalrOne S1M Footer CSS */
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../common/bento.ui/css/webfonts/fontawesome-webfont.eot?v=3.0.1');
+  src: url('../common/bento.ui/css/webfonts/fontawesome-webfont.eot?&v=3.0.1') format('embedded-opentype'),
+  url('../common/bento.ui/css/webfonts/fontawesome-webfont.woff?v=3.0.1') format('woff'),
+  url('../common/bento.ui/css/webfonts/fontawesome-webfont.ttf?v=3.0.1') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+#footer *{
+ margin-bottom:0px;
+}
+
+form {
+  margin-bottom: 0px;
+}
+
+/* Make footer sticky on large screens */
+html,
+body {
+  height: 100%;
+}
+
+.content_wrapper{
+min-height: 100%;
+}
+
+.footer_wrapper{
+	margin-top: -191px; /* negative value of footer height */
+	height: 191px;
+	clear:both;
+}
+
+.footer_wrapper_light{
+	margin-top: -41px; /* negative value of footer height */
+	height: 41px;
+	clear:both;
+}
+
+#default_form, #content {
+/*  min-height: 100%;
+  height: auto !important;
+  height: 100%;*/
+  padding-bottom: 191px;  /* must be same height as the footer */
+}
+
+/* Wrapper for page content to push down footer */
+#content-wrap {
+  padding-bottom: 191px;
+}
+
+#default_form.default_form_light, #content {
+  padding-bottom: 41px;  /* must be same height as the footer */
+}
+
+/* Wrapper for page content to push down footer */
+#content-wrap {
+  padding-bottom: 41px;
+}
+
+.footer_wrapper_light [class^="TRfooter"] {
+	/* height: 30px; commented by 21395. */
+}
+
+/* Footer override */
+.TRfooter {
+  display: block;
+  padding: 10px 0px 50px;  
+  border-top: 1px solid #000;
+  background-color: #333; /* For older browsers */
+  /*background: linear-gradient(to bottom, rgb(80, 80, 80) 0%, rgb(44, 44, 44) 100%) repeat scroll 0% 0% transparent;*/
+  background-attachment: scroll;
+  background-image: linear-gradient(to bottom, rgb(80, 80, 80) 0%, rgb(44, 44, 44) 100%);
+  background-position: 0% 0%;
+  background-repeat: repeat;
+
+  color: #CCC;
+
+  /* added for old centers to emulate Bootstrap styles */
+  font-family: Arial, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+
+  /* for sticky footer */
+/*  margin-top: -191px;*//* vk */
+
+  text-align: center;
+}
+
+
+/* for GXT centers */
+#footer .TRfooter {
+  margin-top: 0px;
+}
+
+/* container */
+.TRfooter .container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 940px;
+
+  text-align: left;
+}
+
+.TRfooter .container:before, .TRfooter .container:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.TRfooter .container:after {
+  clear: both;
+}
+
+/* row-fluid */
+.TRfooter .row-fluid {
+  width: 100%;
+}
+
+.TRfooter .row-fluid:after {
+  clear: both;
+}
+
+.TRfooter .row-fluid:before, .TRfooter .row-fluid:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+/* row */
+.TRfooter .row {
+  margin-left: -20px;;
+}
+
+/* span11 */
+.TRfooter .span11 {
+  width: 860px;
+}
+
+.TRfooter [class*="span"] {
+  float: left;
+  min-height: 1px;
+  margin-left: 20px;
+}
+.tool-links{
+	background-color:#000; 
+}
+
+/* links */
+.TRfooter a {
+  color: #0083bf;
+  text-decoration: none;
+}
+
+.TRfooter a:link.footerlink {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.TRfooter a:visited.footerlink {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.TRfooter a:hover.footerlink {
+  color: #6699CC;;
+  text-decoration: underline;
+}
+
+.TRfooter a:active.footerlink {
+  color: #6699CC;;
+  text-decoration: none;
+}
+
+/* images */
+.TRfooter img {
+  width: auto\9;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  /*padding-left: 20px;*/
+}
+
+/* p */
+.TRfooter p {
+  margin: 0 0 10px;
+  /*padding-left: 20px;*/
+}
+
+/* icons */
+.TRfooter a [class^="icon-"], .TRfooter a [class*=" icon-"] {
+  display: inline-block;
+}
+
+.TRfooter [class^="icon-"], .TRfooter [class*=" icon-"] {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: normal;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  margin-top: 0;
+  color: #669FD5; /* US-002597 */
+}
+
+.TRfooter [class^="icon-"]:before, .TRfooter [class*=" icon-"]:before {
+  text-decoration: inherit;
+  display: inline-block;
+  speak: none;
+}
+
+.TRfooter .icon-twitter:before {
+  content: "\f099";
+}
+
+.TRfooter .icon-cogs:before {
+  content: "\f085";
+}
+
+.TRfooter .icon-key:before {
+  content: "\f084";
+}
+
+.TRfooter .icon-legal:before {
+  content: "\f0e3";
+}
+
+.icon-lightbulb:before {
+content: "\f0eb";
+}
+
+.TRfooter .icon-user:before {
+  content: "\f007";
+}
+
+.TRfooter .icon-ambulance:before {
+  content: "\f0f9";
+}
+
+.TRfooter .icon-beaker:before{
+	content: "\f0c3";
+}
+
+.TRfooter .icon-time:before {
+content: "\f017";
+}
+
+/* other classes */
+.TRfooter .pull-left {
+  float: left;
+}
+
+.TRfooter .pull-right {
+  float: right;
+}
+
+/* Landscape phones */
+@media (max-width: 480px) {
+
+  /* Tighten up footer */
+  .TRfooter {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* Unfloat the back to top in footer to prevent odd text wrapping */
+  .TRfooter .footer .pull-right {
+    float: none;
+  }
+}
+
+/* Tablet */
+@media (max-width: 767px) {
+  .TRfooter {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+
+  /* container */
+  .TRfooter .container {
+    width: auto;
+  }
+
+  /* row-fluid */
+  .TRfooter .row-fluid {
+    width: 100%;
+  }
+
+  /* row */
+  .TRfooter .row {
+    margin-left: 0;
+  }
+
+  /* hidden-phone */
+  .hidden-phone {
+    display: none !important;
+  }
+
+  /* span11 */
+  .TRfooter [class*="span"], .TRfooter .row-fluid [class*="span"] {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+/* middle screens */
+@media (max-width: 979px) and (min-width: 768px) {
+  /* container */
+  .TRfooter .container {
+    width: 724px;
+  }
+
+  /* row-fluid */
+  .TRfooter .row-fluid {
+    width: 100%;
+  }
+
+  .TRfooter .row-fluid:before, .TRfooter .row-fluid:after {
+    display: table;
+    line-height: 0;
+    content: "";
+  }
+
+  .TRfooter .row-fluid:after {
+    clear: both;
+  }
+
+  /* row */
+  .TRfooter .row {
+    margin-left: -20px;
+  }
+
+  .TRfooter .row:before, .TRfooter .row:after {
+    display: table;
+    line-height: 0;
+    content: "";
+  }
+
+  .TRfooter .row:after {
+    clear: both;
+  }
+
+  /* span11 */
+  .TRfooter .span11 {
+    width: 662px;
+  }
+
+  .TRfooter [class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 20px;
+  }
+
+  /* hidden-tablet */
+  .TRfooter .hidden-tablet {
+    display: none !important;
+  }
+}
+
+/*
+@media (min-width: 979px) {
+  .TRfooter {
+    margin-top: -289px;
+  }
+
+  #content-wrap {
+    padding-bottom: 289px;
+  }
+}
+*/
+
+/* Big screens */
+@media (min-width: 1200px) {
+  /* container */
+  .TRfooter .container {
+    width: 1170px;
+  }
+
+  /* row-fluid */
+  .TRfooter .row-fluid {
+    width: 100%;
+  }
+
+  .TRfooter .row-fluid:before, .TRfooter .row-fluid:after {
+    display: table;
+    line-height: 0;
+    content: "";
+  }
+
+  .TRfooter .row-fluid:after {
+    clear: both;
+  }
+
+  /* row */
+  .TRfooter .row {
+    margin-left: -30px;
+  }
+
+  .TRfooter .row:before, .TRfooter .row:after {
+    display: table;
+    line-height: 0;
+    content: "";
+    clear: both;
+  }
+
+  /* span11 */
+  .TRfooter .span11 {
+    width: 1070px;
+  }
+
+  .TRfooter [class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 30px;
+  }
+  
+  .ca_copyright {
+    color: #FFF;
+  }
+  
+}
